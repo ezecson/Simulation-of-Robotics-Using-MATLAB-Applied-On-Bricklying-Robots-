@@ -1,0 +1,336 @@
+<robot name="simple">
+  <link name="Hexagon Nut ISO - 4032 - M5 - W - N-1">
+    <inertial>
+      <origin xyz="0.05812608773143703 0.029202269371365705 -0.0171060849775594" rpy="0 0 0"/>
+      <mass value="0.00019053"/>
+      <inertia ixx="1.39043e-09" ixy="-7.15756e-17" ixz="0.0" iyy="1.39043e-09" iyz="-3.52631e-16" izz="2.10777e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.05812602475510072 0.029202319874913583 -0.014779568161913444" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - hexagon nut iso - 4032 - m5 - w - n-1.stl"/>
+      </geometry>
+      <material name="Hexagon Nut ISO - 4032 - M5 - W - N-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.05812602475510072 0.029202319874913583 -0.014779568161913444" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - hexagon nut iso - 4032 - m5 - w - n-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="ISO 7045 - M5 x 6 - Z --- 6S-2">
+    <inertial>
+      <origin xyz="0.0037975054350671616 0 0" rpy="0 0 0"/>
+      <mass value="0.000297704"/>
+      <inertia ixx="2.41963e-09" ixy="7.00947e-20" ixz="-5.87906e-20" iyy="2.96347e-09" iyz="0.0" izz="2.96347e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - iso 7045 - m5 x 6 - z --- 6s-2.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M5 x 6 - Z --- 6S-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - iso 7045 - m5 x 6 - z --- 6s-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="ISO 7045 - M5 x 6 - Z --- 6S-2--Hexagon Nut ISO - 4032 - M5 - W - N-1" type="fixed">
+    <origin xyz="0.05812604629508103 0.029202310513080587 -0.02817953487976198" rpy="-0.7237455034479314 -1.5707956806425758 -1.5369311160704073"/>
+    <parent link="Hexagon Nut ISO - 4032 - M5 - W - N-1"/>
+    <child link="ISO 7045 - M5 x 6 - Z --- 6S-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part4-1">
+    <inertial>
+      <origin xyz="-0.05500001555141383 0 -0.0014999725678047846" rpy="0 0 0"/>
+      <mass value="0.00204302"/>
+      <inertia ixx="8.60805e-09" ixy="0.0" ixz="0.0" iyy="2.22351e-06" iyz="0.0" izz="2.22905e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.0030000435407779727" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - part4-1.stl"/>
+      </geometry>
+      <material name="Part4-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0030000435407779727" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - part4-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4-1--ISO 7045 - M5 x 6 - Z --- 6S-2" type="fixed">
+    <origin xyz="0.003699939818154409 0 0" rpy="-1.5707956070450495 0.5235987838847943 1.5707964601779827"/>
+    <axis xyz="-2.1777681014079064e-07 -5.940162189077558e-07 -0.9999998245782846"/>
+    <parent link="ISO 7045 - M5 x 6 - Z --- 6S-2"/>
+    <child link="Part4-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Hexagon Nut ISO - 4032 - M5 - W - N-2">
+    <inertial>
+      <origin xyz="0 0 -0.002326470491660893" rpy="0 0 0"/>
+      <mass value="0.00019053"/>
+      <inertia ixx="1.39043e-09" ixy="-7.15756e-17" ixz="0.0" iyy="1.39043e-09" iyz="-3.52631e-16" izz="2.10777e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - hexagon nut iso - 4032 - m5 - w - n-2.stl"/>
+      </geometry>
+      <material name="Hexagon Nut ISO - 4032 - M5 - W - N-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - hexagon nut iso - 4032 - m5 - w - n-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4-1--Hexagon Nut ISO - 4032 - M5 - W - N-2" type="fixed">
+    <origin xyz="-0.10999986902063082 3.8162869744895467e-07 -0.007699979570649735" rpy="3.1415919631475178 0 -0.3623347415095002"/>
+    <parent link="Part4-1"/>
+    <child link="Hexagon Nut ISO - 4032 - M5 - W - N-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M5 x 8 - Z --- 8S-3">
+    <inertial>
+      <origin xyz="0.004517028913615606 0 0" rpy="0 0 0"/>
+      <mass value="0.000332876"/>
+      <inertia ixx="2.51955e-09" ixy="6.3864e-20" ixz="-6.50208e-20" iyy="4.49484e-09" iyz="0.0" izz="4.49484e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - iso 7045 - m5 x 8 - z --- 8s-3.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M5 x 8 - Z --- 8S-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - iso 7045 - m5 x 8 - z --- 8s-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="ISO 7045 - M5 x 8 - Z --- 8S-3--Hexagon Nut ISO - 4032 - M5 - W - N-2" type="fixed">
+    <origin xyz="0 0 -0.014399987216144737" rpy="-1.0112983426167732 -1.5707962266345952 -0.39823394056554906"/>
+    <parent link="Hexagon Nut ISO - 4032 - M5 - W - N-2"/>
+    <child link="ISO 7045 - M5 x 8 - Z --- 8S-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part4-2">
+    <inertial>
+      <origin xyz="-0.05500054550095755 0 0.0015001313672833028" rpy="0 0 0"/>
+      <mass value="0.00204302"/>
+      <inertia ixx="8.60805e-09" ixy="0.0" ixz="0.0" iyy="2.22351e-06" iyz="0.0" izz="2.22905e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - part4-2.stl"/>
+      </geometry>
+      <material name="Part4-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - part4-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4-1--Part4-2" type="continuous">
+    <origin xyz="-0.10999980876001422 3.52379283502513e-07 0" rpy="0 7.451256191734408e-07 -0.008508475797105751"/>
+    <axis xyz="5.324106727710998e-07 -5.232073090055689e-07 -0.9999998245782062"/>
+    <parent link="Part4-1"/>
+    <child link="Part4-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M5 x 6 - Z --- 6S-3">
+    <inertial>
+      <origin xyz="9.739482276914513e-05 -7.060437427208743e-07 0" rpy="0 0 0"/>
+      <mass value="0.000297704"/>
+      <inertia ixx="2.41963e-09" ixy="7.00947e-20" ixz="-5.87906e-20" iyy="2.96347e-09" iyz="0.0" izz="2.96347e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0037001279910493373 -5.097579436341704e-07 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - iso 7045 - m5 x 6 - z --- 6s-3.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M5 x 6 - Z --- 6S-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0037001279910493373 -5.097579436341704e-07 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - iso 7045 - m5 x 6 - z --- 6s-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4-2--ISO 7045 - M5 x 6 - Z --- 6S-3" type="fixed">
+    <origin xyz="-0.11000054026273104 -2.9335810641795135e-07 0" rpy="-1.1738128652225324 -1.5707958274970018 2.2295188837660964"/>
+    <axis xyz="-0.9999998245784507 -2.606002393878981e-07 0.0"/>
+    <parent link="Part4-2"/>
+    <child link="ISO 7045 - M5 x 6 - Z --- 6S-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part2-1">
+    <inertial>
+      <origin xyz="0 6.553303299453809e-05 0.0012129999999999988" rpy="0 0 0"/>
+      <mass value="0.00107835"/>
+      <inertia ixx="4.41673e-08" ixy="0.0" ixz="0.0" iyy="4.45945e-08" iyz="4.03831e-10" izz="7.79296e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - part2-1.stl"/>
+      </geometry>
+      <material name="Part2-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - part2-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-1--Hexagon Nut ISO - 4032 - M5 - W - N-1" type="fixed">
+    <origin xyz="0.05526205609886809 0.025731345507856038 -0.0194796047755311" rpy="-1.5707968109766894 -2.7552612097414897e-07 2.4517123612546805"/>
+    <parent link="Hexagon Nut ISO - 4032 - M5 - W - N-1"/>
+    <child link="Part2-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="part1-1">
+    <inertial>
+      <origin xyz="0 0 -0.009338100000000002" rpy="0 0 0"/>
+      <mass value="0.0215356"/>
+      <inertia ixx="3.39052e-06" ixy="0.0" ixz="0.0" iyy="3.39052e-06" iyz="0.0" izz="6.25091e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.015" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - part1-1.stl"/>
+      </geometry>
+      <material name="part1-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.015" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="simple - part1-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="part1-1--Part2-1" type="continuous">
+    <origin xyz="0 0 0.0020000000000000018" rpy="3.141592653589793 0 -2.755743458119967"/>
+    <axis xyz="0.0 0.0 -1.0"/>
+    <parent link="Part2-1"/>
+    <child link="part1-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <gazebo reference="Hexagon Nut ISO - 4032 - M5 - W - N-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M5 x 6 - Z --- 6S-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part4-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Hexagon Nut ISO - 4032 - M5 - W - N-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M5 x 8 - Z --- 8S-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part4-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M5 x 6 - Z --- 6S-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part2-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="part1-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo>
+    <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+  </gazebo>
+</robot>

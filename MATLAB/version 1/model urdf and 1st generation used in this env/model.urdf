@@ -1,0 +1,4500 @@
+<robot name="model">
+  <link name="Hexagon Nut ISO - 4032 - M3 - D - S-6">
+    <inertial>
+      <origin xyz="-0.014376727556527948 0.0018869285957263879 -0.0037999500000000016" rpy="0 0 0"/>
+      <mass value="4.87905e-05"/>
+      <inertia ixx="1.47189e-10" ixy="-1.61766e-17" ixz="0.0" iyy="1.47189e-10" iyz="2.87641e-21" izz="2.48316e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.014376727556527948 0.0018869285957263879 -0.002600000000000001" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - hexagon nut iso - 4032 - m3 - d - s-6.stl"/>
+      </geometry>
+      <material name="Hexagon Nut ISO - 4032 - M3 - D - S-6_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.014376727556527948 0.0018869285957263879 -0.002600000000000001" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - hexagon nut iso - 4032 - m3 - d - s-6.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="Part4-m1-1">
+    <inertial>
+      <origin xyz="0.0125574 0.00725 0.00016379999999999954" rpy="0 0 0"/>
+      <mass value="0.0820796"/>
+      <inertia ixx="7.37766e-05" ixy="0.0" ixz="0.0" iyy="7.37766e-05" iyz="0.0" izz="0.00014619"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0125574 0.00725 -0.005" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part4-m1-1.stl"/>
+      </geometry>
+      <material name="Part4-m1-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0125574 0.00725 -0.005" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part4-m1-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4-m1-1--Hexagon Nut ISO - 4032 - M3 - D - S-6" type="continuous">
+    <origin xyz="-0.014376727556527948 0.0018869285957263879 -0.005000000000000003" rpy="3.141592653589793 0 0.3930948066138692"/>
+    <axis xyz="0.0 0.0 -1.0"/>
+    <parent link="Hexagon Nut ISO - 4032 - M3 - D - S-6"/>
+    <child link="Part4-m1-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Hexagon Nut ISO - 4032 - M3 - D - S-5">
+    <inertial>
+      <origin xyz="0 0 0.0012000500000000011" rpy="0 0 0"/>
+      <mass value="4.87905e-05"/>
+      <inertia ixx="1.47189e-10" ixy="-1.61766e-17" ixz="0.0" iyy="1.47189e-10" iyz="2.87641e-21" izz="2.48316e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.0024000000000000015" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - hexagon nut iso - 4032 - m3 - d - s-5.stl"/>
+      </geometry>
+      <material name="Hexagon Nut ISO - 4032 - M3 - D - S-5_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.0024000000000000015" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - hexagon nut iso - 4032 - m3 - d - s-5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4-m1-1--Hexagon Nut ISO - 4032 - M3 - D - S-5" type="continuous">
+    <origin xyz="0.0125574 0.021750000000000002 0" rpy="3.141592653589793 0 0.3930948066138692"/>
+    <axis xyz="0.0 0.0 1.0000000000000004"/>
+    <parent link="Part4-m1-1"/>
+    <child link="Hexagon Nut ISO - 4032 - M3 - D - S-5"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part3-m1-1">
+    <inertial>
+      <origin xyz="5.411462404361438e-07 0.0059222000000000025 -5.411471743807945e-07" rpy="0 0 0"/>
+      <mass value="0.0100651"/>
+      <inertia ixx="1.17511e-06" ixy="-2.08922e-11" ixz="-1.34113e-12" iyy="2.09325e-06" iyz="2.08922e-11" izz="1.17511e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part3-m1-1.stl"/>
+      </geometry>
+      <material name="Part3-m1-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part3-m1-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4-m1-1--Part3-m1-1" type="fixed">
+    <origin xyz="0.0125574 0.00725 0.005" rpy="1.5707963267948972 0 -0.523598883792035"/>
+    <parent link="Part4-m1-1"/>
+    <child link="Part3-m1-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 15 ABB - 3735 - 38,DE,NC,38_68-1">
+    <inertial>
+      <origin xyz="0.003515299999999999 0 0" rpy="0 0 0"/>
+      <mass value="0.00228646"/>
+      <inertia ixx="9.08898e-07" ixy="0.0" ixz="0.0" iyy="4.62533e-07" iyz="0.0" izz="4.62533e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0034999999999999996 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 15 abb - 3735 - 38,de,nc,38_68-1.stl"/>
+      </geometry>
+      <material name="ISO 15 ABB - 3735 - 38,DE,NC,38_68-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0034999999999999996 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 15 abb - 3735 - 38,de,nc,38_68-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part3-m1-1--ISO 15 ABB - 3735 - 38,DE,NC,38_68-1" type="continuous">
+    <origin xyz="0 0.005000000000000001 0" rpy="-1.979432281041549 0 1.5707963267948972"/>
+    <axis xyz="1.0 0.0 0.0"/>
+    <parent link="Part3-m1-1"/>
+    <child link="ISO 15 ABB - 3735 - 38,DE,NC,38_68-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="part6-m1-1">
+    <inertial>
+      <origin xyz="0 0 0.0015000000000000013" rpy="0 0 0"/>
+      <mass value="0.00274084"/>
+      <inertia ixx="3.46316e-07" ixy="0.0" ixz="0.0" iyy="3.46316e-07" iyz="0.0" izz="6.8852e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part6-m1-1.stl"/>
+      </geometry>
+      <material name="part6-m1-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part6-m1-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part3-m1-1--part6-m1-1" type="fixed">
+    <origin xyz="0 0.012 0" rpy="-1.570796326794897 0 0"/>
+    <parent link="Part3-m1-1"/>
+    <child link="part6-m1-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 25 - Z --- 25S-3">
+    <inertial>
+      <origin xyz="0.009402 0 0" rpy="0 0 0"/>
+      <mass value="0.00019805"/>
+      <inertia ixx="3.27492e-10" ixy="7.501e-19" ixz="-2.66362e-17" iyy="1.44559e-08" iyz="0.0" izz="1.44559e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0023999999999999994 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-3.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 25 - Z --- 25S-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0023999999999999994 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="part6-m1-1--ISO 7045 - M3 x 25 - Z --- 25S-3" type="continuous">
+    <origin xyz="0.014500027405480911 0 0.0030000000000000027" rpy="-0.5235988837920349 1.5707963267948966 0"/>
+    <axis xyz="1.0 0.0 0.0"/>
+    <parent link="part6-m1-1"/>
+    <child link="ISO 7045 - M3 x 25 - Z --- 25S-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 25 - Z --- 25S-2">
+    <inertial>
+      <origin xyz="0.009402 0 0" rpy="0 0 0"/>
+      <mass value="0.00019805"/>
+      <inertia ixx="3.27492e-10" ixy="7.501e-19" ixz="-2.66362e-17" iyy="1.44559e-08" iyz="0.0" izz="1.44559e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0023999999999999994 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-2.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 25 - Z --- 25S-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0023999999999999994 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="part6-m1-1--ISO 7045 - M3 x 25 - Z --- 25S-2" type="continuous">
+    <origin xyz="-0.007250026046852355 -0.012557384961844659 0.0030000000000000027" rpy="-0.5235988837920349 1.5707963267948966 0"/>
+    <axis xyz="1.0 0.0 0.0"/>
+    <parent link="part6-m1-1"/>
+    <child link="ISO 7045 - M3 x 25 - Z --- 25S-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 25 - Z --- 25S-1">
+    <inertial>
+      <origin xyz="0.009402000000000004 0 0" rpy="0 0 0"/>
+      <mass value="0.00019805"/>
+      <inertia ixx="3.27492e-10" ixy="7.501e-19" ixz="-2.66362e-17" iyy="1.44559e-08" iyz="0.0" izz="1.44559e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0023999999999999994 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-1.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 25 - Z --- 25S-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0023999999999999994 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="part6-m1-1--ISO 7045 - M3 x 25 - Z --- 25S-1" type="continuous">
+    <origin xyz="-0.007250001358628557 0.012557367570469699 0.0030000000000000027" rpy="-0.5318728972479799 1.570796326794896 0"/>
+    <axis xyz="1.0000000000000002 -8.673617379884035e-19 5.551115123125783e-16"/>
+    <parent link="part6-m1-1"/>
+    <child link="ISO 7045 - M3 x 25 - Z --- 25S-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part7-11">
+    <inertial>
+      <origin xyz="0 0.0011958999999999997 0" rpy="0 0 0"/>
+      <mass value="0.000418074"/>
+      <inertia ixx="8.49393e-09" ixy="0.0" ixz="0.0" iyy="1.5716e-08" iyz="0.0" izz="8.49393e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-3 part7-1.stl"/>
+      </geometry>
+      <material name="Part7-11_color">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-3 part7-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part3-m1-1--Part7-1" type="fixed">
+    <origin xyz="0 0.012 0" rpy="0 1.3335304610557952 0"/>
+    <parent link="Part3-m1-1"/>
+    <child link="Part7-11"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="gear4-11">
+    <inertial>
+      <origin xyz="-0.04850010000000001 0 0" rpy="0 0 0"/>
+      <mass value="2.62857e-07"/>
+      <inertia ixx="2.6267e-12" ixy="0.0" ixz="0.0" iyy="2.05024e-12" iyz="0.0" izz="2.05024e-12"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.005674399999999996 -0.0009670814753010568 0.0008179315878958187" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-3 gear4-1.stl"/>
+      </geometry>
+      <material name="gear4-11_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.005674399999999996 -0.0009670814753010568 0.0008179315878958187" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-3 gear4-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gear4-1--Part7-11" type="continuous">
+    <origin xyz="0 0.056500100000000004 0" rpy="-2.562579600570606 0 1.5707963267948972"/>
+    <axis xyz="-1.0000000000000002 -4.163336342344337e-17 5.551115123125783e-16"/>
+    <parent link="Part7-11"/>
+    <child link="gear4-11"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part5 upper cover-11">
+    <inertial>
+      <origin xyz="-0.0009071667644768848 -0.0014151999999999984 0" rpy="0 0 0"/>
+      <mass value="0.000571491"/>
+      <inertia ixx="1.64579e-08" ixy="3.09331e-09" ixz="-3.94469e-15" iyy="5.74436e-08" iyz="2.85572e-15" izz="5.33815e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-3 part5 upper cover-1.stl"/>
+      </geometry>
+      <material name="Part5 upper cover-11_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-3 part5 upper cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part3-m1-1--Part5 upper cover-1" type="fixed">
+    <origin xyz="-0.004998633538240638 0.022000000000000006 -0.002294266285890973" rpy="0 0.4302958380307454 -3.1415926535897927"/>
+    <parent link="Part3-m1-1"/>
+    <child link="Part5 upper cover-11"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part4 middle cover-11">
+    <inertial>
+      <origin xyz="0.00027178618249981625 0.005813300000000007 0" rpy="0 0 0"/>
+      <mass value="0.000918938"/>
+      <inertia ixx="2.74071e-08" ixy="-8.04482e-10" ixz="0.0" iyy="7.54955e-08" iyz="0.0" izz="6.55342e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-3 part4 middle cover-1.stl"/>
+      </geometry>
+      <material name="Part4 middle cover-11_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-3 part4 middle cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 middle cover-1--Part5 upper cover-11" type="fixed">
+    <origin xyz="0 -0.016500000000000008 0" rpy="0 0 0"/>
+    <parent link="Part5 upper cover-11"/>
+    <child link="Part4 middle cover-11"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part3 bottom cover-11">
+    <inertial>
+      <origin xyz="0.00012898561353770683 0.0016679999999999959 0" rpy="0 0 0"/>
+      <mass value="0.000511683"/>
+      <inertia ixx="1.00548e-08" ixy="-1.70412e-10" ixz="0.0" iyy="3.57335e-08" iyz="0.0" izz="2.78433e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-3 part3 bottom cover-1.stl"/>
+      </geometry>
+      <material name="Part3 bottom cover-11_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-3 part3 bottom cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 middle cover-1--Part3 bottom cover-11" type="fixed">
+    <origin xyz="0 -0.0049999999999999975 0" rpy="0 0 0"/>
+    <parent link="Part4 middle cover-11"/>
+    <child link="Part3 bottom cover-11"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Hexagon Nut ISO - 4032 - M3 - D - S-4">
+    <inertial>
+      <origin xyz="0 0 0.0012000500000000011" rpy="0 0 0"/>
+      <mass value="4.87905e-05"/>
+      <inertia ixx="1.47189e-10" ixy="-1.61766e-17" ixz="0.0" iyy="1.47189e-10" iyz="2.87641e-21" izz="2.48316e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.0024000000000000015" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - hexagon nut iso - 4032 - m3 - d - s-4.stl"/>
+      </geometry>
+      <material name="Hexagon Nut ISO - 4032 - M3 - D - S-4_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.0024000000000000015" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - hexagon nut iso - 4032 - m3 - d - s-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4-m1-1--Hexagon Nut ISO - 4032 - M3 - D - S-4" type="continuous">
+    <origin xyz="0.0251148 0 0" rpy="3.141592653589793 0 0.3930948066138692"/>
+    <axis xyz="0.0 0.0 1.0000000000000004"/>
+    <parent link="Part4-m1-1"/>
+    <child link="Hexagon Nut ISO - 4032 - M3 - D - S-4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part1-m1-1">
+    <inertial>
+      <origin xyz="0.00034041021673415496 0 0.0025000000000000022" rpy="0 0 0"/>
+      <mass value="0.0250973"/>
+      <inertia ixx="8.77365e-06" ixy="0.0" ixz="0.0" iyy="1.63232e-05" iyz="0.0" izz="2.49923e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part1-m1-1.stl"/>
+      </geometry>
+      <material name="Part1-m1-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part1-m1-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4-m1-1--Part1-m1-1" type="fixed">
+    <origin xyz="0.0125574 0.00725 0.026" rpy="0 0 -0.9538947218227803"/>
+    <parent link="Part4-m1-1"/>
+    <child link="Part1-m1-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part1-m-2">
+    <inertial>
+      <origin xyz="-0.0008138777711693239 0.044131100000000006 0.002499970546545785" rpy="0 0 0"/>
+      <mass value="0.0249837"/>
+      <inertia ixx="1.19376e-05" ixy="1.14633e-06" ixz="-4.26409e-14" iyy="1.05148e-05" iyz="-6.09307e-15" izz="2.23483e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part1-m-2.stl"/>
+      </geometry>
+      <material name="Part1-m-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part1-m-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m1-1--Part1-m-2" type="fixed">
+    <origin xyz="0 -0.03750002429969913 -0.005000000000000001" rpy="1.5707963267948966 0 3.141592653589793"/>
+    <parent link="Part1-m1-1"/>
+    <child link="Part1-m-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part5 upper cover-10">
+    <inertial>
+      <origin xyz="-0.0009071534729150274 -0.0014152187172098481 0" rpy="0 0 0"/>
+      <mass value="0.000571491"/>
+      <inertia ixx="1.64579e-08" ixy="3.09331e-09" ixz="-3.94469e-15" iyy="5.74436e-08" iyz="2.85572e-15" izz="5.33815e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-4 part5 upper cover-1.stl"/>
+      </geometry>
+      <material name="Part5 upper cover-10_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-4 part5 upper cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m-2--Part5 upper cover-1" type="fixed">
+    <origin xyz="-0.01571465332164141 0.05442530000000002 0.004000007677570723" rpy="1.5707964401848225 3.5395216352319306e-07 -0.6108650410854142"/>
+    <parent link="Part1-m-2"/>
+    <child link="Part5 upper cover-10"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="gear4-10">
+    <inertial>
+      <origin xyz="0.0015000334126026946 0 0" rpy="0 0 0"/>
+      <mass value="2.62857e-07"/>
+      <inertia ixx="2.6267e-12" ixy="0.0" ixz="0.0" iyy="2.05024e-12" iyz="0.0" izz="2.05024e-12"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.055674534402102585 -0.0009671289693770763 0.0008179179394594907" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-4 gear4-1.stl"/>
+      </geometry>
+      <material name="gear4-10_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.055674534402102585 -0.0009671289693770763 0.0008179179394594907" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-4 gear4-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gear4-1--Part5 upper cover-10" type="continuous">
+    <origin xyz="-0.005500042007211783 0.0035000425295735257 0" rpy="1.6803554023820548 -4.4551800504334744e-07 -1.5707962633292412"/>
+    <axis xyz="-1.0000003413729046 2.4552700128577243e-07 1.198608635677445e-07"/>
+    <parent link="Part5 upper cover-10"/>
+    <child link="gear4-10"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part7-10">
+    <inertial>
+      <origin xyz="0 -0.05530414966376676 0" rpy="0 0 0"/>
+      <mass value="0.000418074"/>
+      <inertia ixx="8.49393e-09" ixy="0.0" ixz="0.0" iyy="1.5716e-08" iyz="0.0" izz="8.49393e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.056500095665410185 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-4 part7-1.stl"/>
+      </geometry>
+      <material name="Part7-10_color">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.056500095665410185 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-4 part7-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gear4-1--Part7-10" type="continuous">
+    <origin xyz="0.05000008677792442 0 0" rpy="3.141592327341378 0.6925277992528609 1.57079572303068"/>
+    <axis xyz="-3.522412118719953e-07 -1.0000003413728615 -1.8976847043772338e-07"/>
+    <parent link="gear4-10"/>
+    <child link="Part7-10"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part4 middle cover-10">
+    <inertial>
+      <origin xyz="0.0002718050697517668 0.005813354789108157 0" rpy="0 0 0"/>
+      <mass value="0.000918938"/>
+      <inertia ixx="2.74071e-08" ixy="-8.04482e-10" ixz="0.0" iyy="7.54955e-08" iyz="0.0" izz="6.55342e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-4 part4 middle cover-1.stl"/>
+      </geometry>
+      <material name="Part4 middle cover-10_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-4 part4 middle cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 middle cover-1--Part5 upper cover-10" type="fixed">
+    <origin xyz="0 -0.016499956821760257 0" rpy="0 0 0"/>
+    <parent link="Part5 upper cover-10"/>
+    <child link="Part4 middle cover-10"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part3 bottom cover-10">
+    <inertial>
+      <origin xyz="0.00012904533178162425 0.0016680183158081265 0" rpy="0 0 0"/>
+      <mass value="0.000511683"/>
+      <inertia ixx="1.00548e-08" ixy="-1.70412e-10" ixz="0.0" iyy="3.57335e-08" iyz="0.0" izz="2.78433e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-4 part3 bottom cover-1.stl"/>
+      </geometry>
+      <material name="Part3 bottom cover-10_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-4 part3 bottom cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 middle cover-1--Part3 bottom cover-10" type="fixed">
+    <origin xyz="0 -0.005000048131719708 0" rpy="0 0 0"/>
+    <parent link="Part4 middle cover-10"/>
+    <child link="Part3 bottom cover-10"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Spring Pin ISO 13337 - 6 x 65 - St-3">
+    <inertial>
+      <origin xyz="0.032500046165237065 0 -6.769999999998999e-05" rpy="0 0 0"/>
+      <mass value="0.000781588"/>
+      <inertia ixx="5.48818e-09" ixy="0.0" ixz="0.0" iyy="2.76229e-07" iyz="0.0" izz="2.76373e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - spring pin iso 13337 - 6 x 65 - st-3.stl"/>
+      </geometry>
+      <material name="Spring Pin ISO 13337 - 6 x 65 - St-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - spring pin iso 13337 - 6 x 65 - st-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m-2--Spring Pin ISO 13337 - 6 x 65 - St-3" type="fixed">
+    <origin xyz="0.0332378549150918 0.0282545 0.004999974524506005" rpy="-1.5707963285468458 -1.5707960416266176 0"/>
+    <parent link="Part1-m-2"/>
+    <child link="Spring Pin ISO 13337 - 6 x 65 - St-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 30 - Z --- 30N-7">
+    <inertial>
+      <origin xyz="0.011338590838812099 0 0" rpy="0 0 0"/>
+      <mass value="0.000487373"/>
+      <inertia ixx="1.62867e-09" ixy="7.18461e-20" ixz="0.0" iyy="5.14606e-08" iyz="0.0" izz="5.14606e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.003100016374140143 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 30 - z --- 30n-7.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 30 - Z --- 30N-7_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.003100016374140143 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 30 - z --- 30n-7.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m-2--ISO 7045 - M4 x 30 - Z --- 30N-7" type="continuous">
+    <origin xyz="-0.021412132727166137 0.028254500000000012 0" rpy="1.681451062892234 -1.5707958651189058 0.4831514864766186"/>
+    <axis xyz="1.0000003413728917 3.1264920602458446e-07 4.771682626802942e-08"/>
+    <parent link="Part1-m-2"/>
+    <child link="ISO 7045 - M4 x 30 - Z --- 30N-7"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 30 - Z --- 30N-3">
+    <inertial>
+      <origin xyz="0.011338608194141855 0 0" rpy="0 0 0"/>
+      <mass value="0.000487373"/>
+      <inertia ixx="1.62867e-09" ixy="7.18461e-20" ixz="0.0" iyy="5.14606e-08" iyz="0.0" izz="5.14606e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0031000105890302207 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 30 - z --- 30n-3.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 30 - Z --- 30N-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0031000105890302207 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 30 - z --- 30n-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m-2--ISO 7045 - M4 x 30 - Z --- 30N-3" type="continuous">
+    <origin xyz="0.03323781472316645 0.028254500000000002 0" rpy="1.681451062892234 -1.5707958651189058 0.4831514864766186"/>
+    <axis xyz="1.0000003413728917 3.1264920602458446e-07 4.771682626802942e-08"/>
+    <parent link="Part1-m-2"/>
+    <child link="ISO 7045 - M4 x 30 - Z --- 30N-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part2-m-2">
+    <inertial>
+      <origin xyz="-0.028663536845229043 0.12120901301297307 -0.0025002372293680963" rpy="0 0 0"/>
+      <mass value="0.0229848"/>
+      <inertia ixx="5.45283e-05" ixy="5.36486e-06" ixz="1.20121e-13" iyy="2.17401e-06" iyz="2.24506e-11" izz="5.66066e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part2-m-2.stl"/>
+      </geometry>
+      <material name="Part2-m-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part2-m-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-2--Part1-m-2" type="fixed">
+    <origin xyz="0.03172009981732159 0.0255404 0.028000025471223343" rpy="1.0984694162692673e-07 2.619744272267273e-07 0.680363282468416"/>
+    <parent link="Part1-m-2"/>
+    <child link="Part2-m-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Parallel Pin ISO 8734 - 8 x 45 - A - St-1">
+    <inertial>
+      <origin xyz="0.022500011166352946 0 0" rpy="0 0 0"/>
+      <mass value="0.00224532"/>
+      <inertia ixx="1.78478e-08" ixy="0.0" ixz="0.0" iyy="3.82607e-07" iyz="0.0" izz="3.82607e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - parallel pin iso 8734 - 8 x 45 - a - st-1.stl"/>
+      </geometry>
+      <material name="Parallel Pin ISO 8734 - 8 x 45 - A - St-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - parallel pin iso 8734 - 8 x 45 - a - st-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-2--Parallel Pin ISO 8734 - 8 x 45 - A - St-1" type="fixed">
+    <origin xyz="-0.02021995479255701 0.057579996390340366 -0.012999986152586466" rpy="-1.0129871872450735 -1.5707959046451572 -1.4712019357799027"/>
+    <parent link="Part2-m-2"/>
+    <child link="Parallel Pin ISO 8734 - 8 x 45 - A - St-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part5^Assem1-m-1">
+    <inertial>
+      <origin xyz="-0.0010420809793388747 0.058390550171501965 -0.0024999784291093955" rpy="0 0 0"/>
+      <mass value="0.00995345"/>
+      <inertia ixx="7.02057e-07" ixy="-1.58024e-07" ixz="0.0" iyy="4.43427e-06" iyz="0.0" izz="5.09485e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part5^assem1-m-1.stl"/>
+      </geometry>
+      <material name="Part5^Assem1-m-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part5^assem1-m-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Parallel Pin ISO 8734 - 8 x 45 - A - St-1--Part5^Assem1-m-1" type="fixed">
+    <origin xyz="0.031499931398352984 -0.016333892753221 -0.058800623316555334" rpy="1.5707970597246188 0.6086637399364963 1.5707967469453423"/>
+    <parent link="Parallel Pin ISO 8734 - 8 x 45 - A - St-1"/>
+    <child link="Part5^Assem1-m-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part15 t310 connector-2">
+    <inertial>
+      <origin xyz="0 0 0.0018249554014252043" rpy="0 0 0"/>
+      <mass value="0.00329889"/>
+      <inertia ixx="2.70666e-07" ixy="0.0" ixz="0.0" iyy="2.71121e-07" iyz="0.0" izz="5.34461e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part15 t310 connector-2.stl"/>
+      </geometry>
+      <material name="Part15 t310 connector-2_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part15 t310 connector-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Parallel Pin ISO 8734 - 8 x 45 - A - St-1--Part15 t310 connector-2" type="fixed">
+    <origin xyz="-0.000999989899378012 0 0" rpy="1.5707967235743892 1.1794984926986825 1.570796831195306"/>
+    <parent link="Parallel Pin ISO 8734 - 8 x 45 - A - St-1"/>
+    <child link="Part15 t310 connector-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part5^Assem1-m-2">
+    <inertial>
+      <origin xyz="-0.001042071691259125 0.05839056056894969 -0.002499980800745016" rpy="0 0 0"/>
+      <mass value="0.00995345"/>
+      <inertia ixx="7.02057e-07" ixy="-1.58024e-07" ixz="0.0" iyy="4.43427e-06" iyz="0.0" izz="5.09485e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part5^assem1-m-2.stl"/>
+      </geometry>
+      <material name="Part5^Assem1-m-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part5^assem1-m-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Parallel Pin ISO 8734 - 8 x 45 - A - St-1--Part5^Assem1-m-2" type="fixed">
+    <origin xyz="0.00764995570257662 -0.01633391989228259 -0.05880063516797426" rpy="1.5707970597246188 0.6086637399364963 1.5707967469453423"/>
+    <parent link="Parallel Pin ISO 8734 - 8 x 45 - A - St-1"/>
+    <child link="Part5^Assem1-m-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 30 - Z --- 25S-6">
+    <inertial>
+      <origin xyz="0.011663493100682081 0 0" rpy="0 0 0"/>
+      <mass value="0.00023242"/>
+      <inertia ixx="3.65314e-10" ixy="1.20393e-18" ixz="-4.01159e-17" iyy="2.35085e-08" iyz="0.0" izz="2.35085e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0023999808033321676 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 30 - z --- 25s-6.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 30 - Z --- 25S-6_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0023999808033321676 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 30 - z --- 25s-6.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part5^Assem1-m-2--ISO 7045 - M3 x 30 - Z --- 25S-6" type="continuous">
+    <origin xyz="0.0337318481803431 0.05986027008344468 -0.004999956609985968" rpy="2.96161636589051 -1.5707955075483784 2.592465867897737"/>
+    <axis xyz="1.000000341372936 -1.0876836342710305e-07 2.0085426039175081e-19"/>
+    <parent link="Part5^Assem1-m-2"/>
+    <child link="ISO 7045 - M3 x 30 - Z --- 25S-6"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-9">
+    <inertial>
+      <origin xyz="0.0023517646084150316 0 0" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.001300023135813646 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-9.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-9_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.001300023135813646 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-9.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-2--ISO 7045 - M1.6 x 8 - Z --- 8S-9" type="continuous">
+    <origin xyz="-0.027383492529216805 0.05255545894975258 0" rpy="-1.3829475685120327 1.5707961350593747 -3.0403009539621864"/>
+    <axis xyz="-1.0000003413728917 -3.126492061911179e-07 4.771682621251827e-08"/>
+    <parent link="Part2-m-2"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-9"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Spring Pin ISO 8752 - 5 x 24 - St-2">
+    <inertial>
+      <origin xyz="0.011999985584126707 0 -5.200000000001037e-05" rpy="0 0 0"/>
+      <mass value="0.000290722"/>
+      <inertia ixx="1.22944e-09" ixy="0.0" ixz="0.0" iyy="1.42572e-08" iyz="0.0" izz="1.42894e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - spring pin iso 8752 - 5 x 24 - st-2.stl"/>
+      </geometry>
+      <material name="Spring Pin ISO 8752 - 5 x 24 - St-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - spring pin iso 8752 - 5 x 24 - st-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-2--Spring Pin ISO 8752 - 5 x 24 - St-2" type="fixed">
+    <origin xyz="-0.028146820704127724 0.1069475660222776 0" rpy="-0.15516518082443137 -1.5707962464164347 -2.095994428131308"/>
+    <parent link="Part2-m-2"/>
+    <child link="Spring Pin ISO 8752 - 5 x 24 - St-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-10">
+    <inertial>
+      <origin xyz="0.0023518249065380015 0 0" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.001299962837690674 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-10.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-10_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.001299962837690674 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-10.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-2--ISO 7045 - M1.6 x 8 - Z --- 8S-10" type="continuous">
+    <origin xyz="-0.016343818707627106 0.05205389493191705 0" rpy="-1.3829475685120327 1.5707961350593747 -3.0403009539621864"/>
+    <axis xyz="-1.0000003413728917 -3.126492061911179e-07 4.771682621251827e-08"/>
+    <parent link="Part2-m-2"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-10"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-8">
+    <inertial>
+      <origin xyz="0.002351827353561764 0 0" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.001299957127968565 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-8.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-8_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.001299957127968565 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-8.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-2--ISO 7045 - M1.6 x 8 - Z --- 8S-8" type="continuous">
+    <origin xyz="-0.013056474831180394 0.06260457793015957 0" rpy="-1.3829475685120327 1.5707961350593747 -3.0403009539621864"/>
+    <axis xyz="-1.0000003413728917 -3.126492061911179e-07 4.771682621251827e-08"/>
+    <parent link="Part2-m-2"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-8"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part9-m-2">
+    <inertial>
+      <origin xyz="-0.05115425113190167 -0.012197832315177265 0.0015000027950494849" rpy="0 0 0"/>
+      <mass value="0.0175985"/>
+      <inertia ixx="4.85907e-06" ixy="-1.3548e-05" ixz="0.0" iyy="5.36037e-05" iyz="0.0" izz="5.84364e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0340701025927193 -0.20493010286753383 0.0030001713011919007" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part9-m-2.stl"/>
+      </geometry>
+      <material name="Part9-m-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0340701025927193 -0.20493010286753383 0.0030001713011919007" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part9-m-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-2--Part9-m-2" type="continuous">
+    <origin xyz="-0.034070123531186186 0.2049301594951043 1.0399829560719942e-07" rpy="1.318871551634906e-07 -2.579569405642057e-07 -1.1524592146740995"/>
+    <axis xyz="2.08262565859485e-07 1.7346871050705204e-08 1.00000034137292"/>
+    <parent link="Part2-m-2"/>
+    <child link="Part9-m-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 25 - Z --- 25S-4">
+    <inertial>
+      <origin xyz="0.00940192969441983 -1.455565828284433e-07 0" rpy="0 0 0"/>
+      <mass value="0.00019805"/>
+      <inertia ixx="3.27492e-10" ixy="7.501e-19" ixz="-2.66362e-17" iyy="1.44559e-08" iyz="0.0" izz="1.44559e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.002399826934853924 -8.262866926650458e-07 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-4.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 25 - Z --- 25S-4_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.002399826934853924 -8.262866926650458e-07 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part9-m-2--ISO 7045 - M3 x 25 - Z --- 25S-4" type="continuous">
+    <origin xyz="-0.12940239600410292 -0.03184673988590153 -2.776107888846635e-07" rpy="-1.3142512308106902 -1.570796014433018 0.21555083545998371"/>
+    <axis xyz="1.000000341372936 -1.0876836342710305e-07 2.2075526752309915e-18"/>
+    <parent link="Part9-m-2"/>
+    <child link="ISO 7045 - M3 x 25 - Z --- 25S-4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 25 - Z --- 25S-6">
+    <inertial>
+      <origin xyz="0.009401987545508955 0 0" rpy="0 0 0"/>
+      <mass value="0.00019805"/>
+      <inertia ixx="3.27492e-10" ixy="7.501e-19" ixz="-2.66362e-17" iyy="1.44559e-08" iyz="0.0" izz="1.44559e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.002400108651669331 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-6.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 25 - Z --- 25S-6_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.002400108651669331 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-6.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part9-m-2--ISO 7045 - M3 x 25 - Z --- 25S-6" type="continuous">
+    <origin xyz="0.05211032503798203 0.014159144588717976 0" rpy="-1.3142512308106902 -1.570796014433018 0.21555083545998371"/>
+    <axis xyz="1.000000341372936 -1.0876836342710305e-07 -4.7638629197294163e-20"/>
+    <parent link="Part9-m-2"/>
+    <child link="ISO 7045 - M3 x 25 - Z --- 25S-6"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 25 - Z --- 25S-5">
+    <inertial>
+      <origin xyz="0.00940192969441983 -1.455565828353822e-07 0" rpy="0 0 0"/>
+      <mass value="0.00019805"/>
+      <inertia ixx="3.27492e-10" ixy="7.501e-19" ixz="-2.66362e-17" iyy="1.44559e-08" iyz="0.0" izz="1.44559e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.002400316339649086 -4.791801579417942e-07 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-5.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 25 - Z --- 25S-5_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.002400316339649086 -4.791801579417942e-07 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m3 x 25 - z --- 25s-5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part9-m-2--ISO 7045 - M3 x 25 - Z --- 25S-5" type="continuous">
+    <origin xyz="-0.03175008143581902 -0.001399563424531014 1.9893756356137438e-07" rpy="-1.314251229525692 -1.5707960144330175 0.21555083480869627"/>
+    <axis xyz="1.000000341372936 -1.0876836342710305e-07 2.035081141695933e-18"/>
+    <parent link="Part9-m-2"/>
+    <child link="ISO 7045 - M3 x 25 - Z --- 25S-5"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-5">
+    <inertial>
+      <origin xyz="0.0023517727651609036 0 0" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0013000149790677725 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-5.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-5_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0013000149790677725 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-2--ISO 7045 - M1.6 x 8 - Z --- 8S-5" type="continuous">
+    <origin xyz="-0.024096150001876523 0.06310614303977595 0" rpy="-1.3829475685120327 1.5707961350593747 -3.0403009539621864"/>
+    <axis xyz="-1.0000003413728917 -3.126492061911179e-07 4.771682621251827e-08"/>
+    <parent link="Part2-m-2"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-5"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part1-m-1">
+    <inertial>
+      <origin xyz="-0.0008139356222351887 0.044131100000000006 0.002500052114028147" rpy="0 0 0"/>
+      <mass value="0.0249837"/>
+      <inertia ixx="1.19376e-05" ixy="1.14633e-06" ixz="-4.26409e-14" iyy="1.05148e-05" iyz="-6.09307e-15" izz="2.23483e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part1-m-1.stl"/>
+      </geometry>
+      <material name="Part1-m-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part1-m-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m1-1--Part1-m-1" type="fixed">
+    <origin xyz="0 0.03249997616798428 -0.005000000000000001" rpy="1.5707963267948966 0 3.141592653589793"/>
+    <parent link="Part1-m1-1"/>
+    <child link="Part1-m-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part2-m-1">
+    <inertial>
+      <origin xyz="-0.02866355933033607 0.1212090312093205 -0.002500196445634789" rpy="0 0 0"/>
+      <mass value="0.0229848"/>
+      <inertia ixx="5.45283e-05" ixy="5.36486e-06" ixz="1.20121e-13" iyy="2.17401e-06" iyz="2.24506e-11" izz="5.66066e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part2-m-1.stl"/>
+      </geometry>
+      <material name="Part2-m-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part2-m-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-1--Part1-m-1" type="fixed">
+    <origin xyz="0.03172003815408821 0.025540400000000005 -0.012999996480218327" rpy="1.0984694162692673e-07 2.619744272267273e-07 0.680363282468416"/>
+    <parent link="Part1-m-1"/>
+    <child link="Part2-m-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-2">
+    <inertial>
+      <origin xyz="0.002351790120491675 0 0" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.001300022093976715 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-2.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.001300022093976715 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-1--ISO 7045 - M1.6 x 8 - Z --- 8S-2" type="continuous">
+    <origin xyz="-0.016343844638183377 0.052053916427332855 -0.004999952894105059" rpy="-0.15516518345842734 -1.5707962464164344 -2.0959944301752143"/>
+    <axis xyz="1.000000341372936 -1.0876836342710305e-07 3.705530896834103e-18"/>
+    <parent link="Part2-m-1"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Spring Pin ISO 8752 - 5 x 24 - St-1">
+    <inertial>
+      <origin xyz="-0.011999985584126717 0 -5.1999999999996493e-05" rpy="0 0 0"/>
+      <mass value="0.000290722"/>
+      <inertia ixx="1.22944e-09" ixy="0.0" ixz="0.0" iyy="1.42572e-08" iyz="0.0" izz="1.42894e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.024000029019342548 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - spring pin iso 8752 - 5 x 24 - st-1.stl"/>
+      </geometry>
+      <material name="Spring Pin ISO 8752 - 5 x 24 - St-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.024000029019342548 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - spring pin iso 8752 - 5 x 24 - st-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-1--Spring Pin ISO 8752 - 5 x 24 - St-1" type="continuous">
+    <origin xyz="-0.03265894821890289 0.15495006899507174 -0.004999977247950059" rpy="-0.15516518240254362 -1.5707962464164347 -2.095994426936221"/>
+    <axis xyz="1.000000341372936 -1.0876836342710305e-07 -1.6407400686163324e-18"/>
+    <parent link="Part2-m-1"/>
+    <child link="Spring Pin ISO 8752 - 5 x 24 - St-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-3">
+    <inertial>
+      <origin xyz="0.0023517959056005844 0 0" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0012999578818375934 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-3.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0012999578818375934 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-1--ISO 7045 - M1.6 x 8 - Z --- 8S-3" type="continuous">
+    <origin xyz="-0.02738345028613129 0.05255542527480568 -0.0050000103653683875" rpy="-0.1551651813466599 -1.5707962464164347 -2.095994426936221"/>
+    <axis xyz="1.000000341372936 -1.0876836342710305e-07 -8.694337553063673e-18"/>
+    <parent link="Part2-m-1"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="gear4-1">
+    <inertial>
+      <origin xyz="-0.05417449437252932 0.0009671205932853255 -0.0008179194828559222" rpy="0 0 0"/>
+      <mass value="2.62857e-07"/>
+      <inertia ixx="2.6267e-12" ixy="0.0" ixz="0.0" iyy="2.05024e-12" iyz="0.0" izz="2.05024e-12"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-5 gear4-1.stl"/>
+      </geometry>
+      <material name="gear4-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-5 gear4-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gear4-1--Part2-m-1" type="fixed">
+    <origin xyz="-0.02129261415001507 0.05690639185062285 0.06617447928351566" rpy="-3.1151986716998783 -1.570796018162272 2.8071524092947726"/>
+    <parent link="Part2-m-1"/>
+    <child link="gear4-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part7-1">
+    <inertial>
+      <origin xyz="0 -0.055304170720528 0" rpy="0 0 0"/>
+      <mass value="0.000418074"/>
+      <inertia ixx="8.49393e-09" ixy="0.0" ixz="0.0" iyy="1.5716e-08" iyz="0.0" izz="8.49393e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.056500104110120436 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-5 part7-1.stl"/>
+      </geometry>
+      <material name="Part7-1_color">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.056500104110120436 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-5 part7-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gear4-1--Part7-1" type="continuous">
+    <origin xyz="-0.0056743941504140555 0.0009671146986396234 -0.0008179379410579897" rpy="-3.141592505846465 0.6510740210537811 1.5707965641826973"/>
+    <axis xyz="1.1118426804235249e-07 -1.0000003413729202 -1.756949909448302e-07"/>
+    <parent link="gear4-1"/>
+    <child link="Part7-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part11-m-1">
+    <inertial>
+      <origin xyz="9.36782428100913e-05 0.017203334360538475 -0.009749963218717322" rpy="0 0 0"/>
+      <mass value="0.00448002"/>
+      <inertia ixx="4.13331e-07" ixy="1.02547e-08" ixz="0.0" iyy="2.29636e-06" iyz="0.0" izz="2.70055e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.03407010971084734 -0.20493011749368986 -0.007999589032150464" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part11-m-1.stl"/>
+      </geometry>
+      <material name="Part11-m-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.03407010971084734 -0.20493011749368986 -0.007999589032150464" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part11-m-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-1--Part11-m-1" type="continuous">
+    <origin xyz="-0.03407022608818082 0.2049302430014258 -0.004999961200780195" rpy="3.141592450627202 0 2.4475146944818498"/>
+    <axis xyz="9.652864507714298e-08 1.2223598689145576e-07 -1.00000034137293"/>
+    <parent link="Part2-m-1"/>
+    <child link="Part11-m-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 10 - Z --- 10S-4">
+    <inertial>
+      <origin xyz="0.0018534637591174769 -2.9529600742428386e-07 0" rpy="0 0 0"/>
+      <mass value="0.000219153"/>
+      <inertia ixx="1.06652e-09" ixy="3.80416e-20" ixz="-3.37158e-20" iyy="3.54713e-09" iyz="0.0" izz="3.54713e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0030992955649993686 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 10 - z --- 10s-4.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 10 - Z --- 10S-4_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0030992955649993686 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 10 - z --- 10s-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part11-m-1--ISO 7045 - M4 x 10 - Z --- 10S-4" type="continuous">
+    <origin xyz="0.03453496525199236 0.02390262830301204 -0.011500495661567342" rpy="-0.9318233791775739 -1.5707958655997747 -0.3876402448286762"/>
+    <axis xyz="-1.0000003413728036 4.941008300840544e-07 -1.8065427768998443e-07"/>
+    <parent link="Part11-m-1"/>
+    <child link="ISO 7045 - M4 x 10 - Z --- 10S-4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 40 - Z --- 40S-6">
+    <inertial>
+      <origin xyz="0.018723181956024487 0 0" rpy="0 0 0"/>
+      <mass value="0.000542336"/>
+      <inertia ixx="1.63099e-09" ixy="0.0" ixz="0.0" iyy="9.80006e-08" iyz="0.0" izz="9.80006e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 40 - z --- 40s-6.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 40 - Z --- 40S-6_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 40 - z --- 40s-6.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part11-m-1--ISO 7045 - M4 x 40 - Z --- 40S-6" type="fixed">
+    <origin xyz="0 0 -0.014600064482733432" rpy="1.6469855777282656 -1.570795810133377 -1.1471461374111531"/>
+    <parent link="Part11-m-1"/>
+    <child link="ISO 7045 - M4 x 40 - Z --- 40S-6"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part10-m-2">
+    <inertial>
+      <origin xyz="-0.07135590985295456 -0.0154074020100263 -0.0015000637847980697" rpy="0 0 0"/>
+      <mass value="0.00271359"/>
+      <inertia ixx="2.40919e-07" ixy="-1.06337e-06" ixz="0.0" iyy="4.93598e-06" iyz="0.0" izz="5.17284e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.06834245661144318 -0.22920763579252287 -5.811236185593316e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part10-m-2.stl"/>
+      </geometry>
+      <material name="Part10-m-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.06834245661144318 -0.22920763579252287 -5.811236185593316e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part10-m-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part11-m-1--Part10-m-2" type="continuous">
+    <origin xyz="0.03453505787534439 0.023902626600144333 -0.008000259956444336" rpy="-3.1415919347504353 -3.1331182919642907e-07 -2.4984164279204735"/>
+    <axis xyz="4.6386348290239354e-07 -7.587601191794136e-07 -1.0000003413725465"/>
+    <parent link="Part11-m-1"/>
+    <child link="Part10-m-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 35 - Z --- 35S-3">
+    <inertial>
+      <origin xyz="0.016325796285645622 -5.693816658852713e-07 -5.6160843259212e-07" rpy="0 0 0"/>
+      <mass value="0.000489515"/>
+      <inertia ixx="1.54058e-09" ixy="7.81063e-20" ixz="0.0" iyy="6.93972e-08" iyz="0.0" izz="6.93972e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m4 x 35 - z --- 35s-3.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 35 - Z --- 35S-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m4 x 35 - z --- 35s-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part10-m-2--ISO 7045 - M4 x 35 - Z --- 35S-3" type="fixed">
+    <origin xyz="-0.14271116584890578 -0.030815560257502178 -0.0008999861456496783" rpy="2.002085735186879 1.5707954579096406 -1.2763503366137552"/>
+    <parent link="Part10-m-2"/>
+    <child link="ISO 7045 - M4 x 35 - Z --- 35S-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-1">
+    <inertial>
+      <origin xyz="0.002351790120491675 0 0" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0013000220939767167 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-1.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0013000220939767167 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-1--ISO 7045 - M1.6 x 8 - Z --- 8S-1" type="continuous">
+    <origin xyz="-0.013056475128714648 0.0626045786817393 -0.004999993617722624" rpy="-0.1551651813466599 -1.5707962464164347 -2.095994426936221"/>
+    <axis xyz="1.000000341372936 -1.0876836342710305e-07 -5.556359762360287e-18"/>
+    <parent link="Part2-m-1"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part15 t310 connector-1">
+    <inertial>
+      <origin xyz="0 0 0.0018250808781491643" rpy="0 0 0"/>
+      <mass value="0.00329889"/>
+      <inertia ixx="2.70666e-07" ixy="0.0" ixz="0.0" iyy="2.71121e-07" iyz="0.0" izz="5.34461e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part15 t310 connector-1.stl"/>
+      </geometry>
+      <material name="Part15 t310 connector-1_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part15 t310 connector-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-1--Part15 t310 connector-1" type="continuous">
+    <origin xyz="-0.020219955259424223 0.05757999544009383 0" rpy="-1.7825053298151605e-07 0 -0.9591208212685989"/>
+    <axis xyz="-8.33659929977415e-08 -2.8110873653841573e-07 1.0000003413728988"/>
+    <parent link="Part2-m-1"/>
+    <child link="Part15 t310 connector-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 35 - Z --- 35S-8">
+    <inertial>
+      <origin xyz="0.016325653987477352 0 0" rpy="0 0 0"/>
+      <mass value="0.000489515"/>
+      <inertia ixx="1.54058e-09" ixy="7.81063e-20" ixz="0.0" iyy="6.93972e-08" iyz="0.0" izz="6.93972e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 35 - z --- 35s-8.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 35 - Z --- 35S-8_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 35 - z --- 35s-8.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-1--ISO 7045 - M4 x 35 - Z --- 35S-8" type="fixed">
+    <origin xyz="-0.028146791897271227 0.10694754239328111 0.0030999916244309547" rpy="2.2851509186908867 1.570795834927141 1.5467127411922408"/>
+    <parent link="Part2-m-1"/>
+    <child link="ISO 7045 - M4 x 35 - Z --- 35S-8"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-4">
+    <inertial>
+      <origin xyz="0.0023517727651649334 0 0" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.001300039449303455 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-4.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-4_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.001300039449303455 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m1.6 x 8 - z --- 8s-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-1--ISO 7045 - M1.6 x 8 - Z --- 8S-4" type="continuous">
+    <origin xyz="-0.024096125746876633 0.06310612392190701 -0.004999969521519373" rpy="-0.15516518040893387 -1.5707962464164344 -2.095994431716568"/>
+    <axis xyz="1.000000341372936 -1.0876836342710305e-07 -1.0901303769357268e-17"/>
+    <parent link="Part2-m-1"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part9-m-1">
+    <inertial>
+      <origin xyz="-0.05115405312919011 -0.012197730946971769 -0.0014995642071225501" rpy="0 0 0"/>
+      <mass value="0.0175985"/>
+      <inertia ixx="4.85907e-06" ixy="-1.3548e-05" ixz="0.0" iyy="5.36037e-05" iyz="0.0" izz="5.84364e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.034069780234025876 -0.20493026719862004 -3.004815583018683e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part9-m-1.stl"/>
+      </geometry>
+      <material name="Part9-m-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.034069780234025876 -0.20493026719862004 -3.004815583018683e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part9-m-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m-1--Part9-m-1" type="continuous">
+    <origin xyz="-0.03407022608818082 0.2049302430014258 -0.004999961200780195" rpy="1.318871551634906e-07 -2.579569405642057e-07 -1.1524592146740995"/>
+    <axis xyz="-2.08262565859485e-07 -1.7346871050705204e-08 -1.00000034137292"/>
+    <parent link="Part2-m-1"/>
+    <child link="Part9-m-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part6 t308-2">
+    <inertial>
+      <origin xyz="9.51089890521839e-05 0.013890957067302992 -1.858654466169174e-07" rpy="0 0 0"/>
+      <mass value="0.00656152"/>
+      <inertia ixx="6.96131e-07" ixy="1.64458e-07" ixz="-3.14491e-15" iyy="1.7873e-06" iyz="5.30745e-16" izz="2.45611e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part6 t308-2.stl"/>
+      </geometry>
+      <material name="Part6 t308-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part6 t308-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part9-m-1--Part6 t308-2" type="fixed">
+    <origin xyz="-0.1771792145457873 -0.024104577113126247 0.0014996940838819528" rpy="0 7.707629599998196e-07 -0.9809093002071267"/>
+    <parent link="Part9-m-1"/>
+    <child link="Part6 t308-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 35 - Z --- 35S-4">
+    <inertial>
+      <origin xyz="0.016324980611046758 -1.5691686228169743e-07 -1.5596359473346588e-07" rpy="0 0 0"/>
+      <mass value="0.000489515"/>
+      <inertia ixx="1.54058e-09" ixy="7.81063e-20" ixz="0.0" iyy="6.93972e-08" iyz="0.0" izz="6.93972e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m4 x 35 - z --- 35s-4.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 35 - Z --- 35S-4_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m4 x 35 - z --- 35s-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part6 t308-2--ISO 7045 - M4 x 35 - Z --- 35S-4" type="fixed">
+    <origin xyz="-0.006899672900506193 0.0330001498450784 0.005599740089360511" rpy="1.9321783385635813 1.5707956543554087 -0.5501434026143283"/>
+    <parent link="Part6 t308-2"/>
+    <child link="ISO 7045 - M4 x 35 - Z --- 35S-4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Spring Pin ISO 13337 - 6 x 22 - St-3">
+    <inertial>
+      <origin xyz="0.010999836533964871 -6.46032082607384e-07 -6.729642408370706e-05" rpy="0 0 0"/>
+      <mass value="0.000262975"/>
+      <inertia ixx="1.84405e-09" ixy="0.0" ixz="0.0" iyy="1.1326e-08" iyz="0.0" izz="1.13743e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 spring pin iso 13337 - 6 x 22 - st-3.stl"/>
+      </geometry>
+      <material name="Spring Pin ISO 13337 - 6 x 22 - St-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 spring pin iso 13337 - 6 x 22 - st-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part6 t308-2--Spring Pin ISO 13337 - 6 x 22 - St-3" type="fixed">
+    <origin xyz="-0.0068997390935574 0.032999543473976205 -0.0024995087417306605" rpy="-2.173323956170705 1.5707956015335938 0.06416931884091104"/>
+    <parent link="Part6 t308-2"/>
+    <child link="Spring Pin ISO 13337 - 6 x 22 - St-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Spring Pin ISO 13337 - 6 x 22 - St-2">
+    <inertial>
+      <origin xyz="0.010999836533933827 0 -6.658996114802807e-05" rpy="0 0 0"/>
+      <mass value="0.000262975"/>
+      <inertia ixx="1.84405e-09" ixy="0.0" ixz="0.0" iyy="1.1326e-08" iyz="0.0" izz="1.13743e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 spring pin iso 13337 - 6 x 22 - st-2.stl"/>
+      </geometry>
+      <material name="Spring Pin ISO 13337 - 6 x 22 - St-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 spring pin iso 13337 - 6 x 22 - st-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part6 t308-2--Spring Pin ISO 13337 - 6 x 22 - St-2" type="fixed">
+    <origin xyz="-0.02749946532325409 0.005999771173950105 -0.002499417691259692" rpy="-2.173323956170705 1.5707956015335938 0.06416931884091104"/>
+    <parent link="Part6 t308-2"/>
+    <child link="Spring Pin ISO 13337 - 6 x 22 - St-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part6 t308-1">
+    <inertial>
+      <origin xyz="9.510898905212839e-05 0.01389095706730295 -1.858654466169174e-07" rpy="0 0 0"/>
+      <mass value="0.00656152"/>
+      <inertia ixx="6.96131e-07" ixy="1.64458e-07" ixz="-3.14491e-15" iyy="1.7873e-06" iyz="5.30745e-16" izz="2.45611e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part6 t308-1.stl"/>
+      </geometry>
+      <material name="Part6 t308-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part6 t308-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part9-m-1--Part6 t308-1" type="fixed">
+    <origin xyz="-0.1771787571121268 -0.024104341142246466 -0.025499670533365493" rpy="0 7.707629599998196e-07 -0.9809093002071267"/>
+    <parent link="Part9-m-1"/>
+    <child link="Part6 t308-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Hexagon Thin Nut ISO - 4035 - M4 - N-5">
+    <inertial>
+      <origin xyz="2.2467567109552e-07 3.5891184385627994e-07 -0.0010987774209106627" rpy="0 0 0"/>
+      <mass value="7.27422e-05"/>
+      <inertia ixx="3.26126e-10" ixy="-4.77772e-17" ixz="0.0" iyy="3.26123e-10" iyz="1.76128e-19" izz="5.9587e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m4 - n-5.stl"/>
+      </geometry>
+      <material name="Hexagon Thin Nut ISO - 4035 - M4 - N-5_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m4 - n-5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part6 t308-1--Hexagon Thin Nut ISO - 4035 - M4 - N-5" type="fixed">
+    <origin xyz="-0.0068997290452949 0.032999615609572035 -0.004700089118516659" rpy="3.1415919880991527 1.2068183967348772e-06 2.462689795596684"/>
+    <parent link="Part6 t308-1"/>
+    <child link="Hexagon Thin Nut ISO - 4035 - M4 - N-5"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part7 t308-1">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.00301624"/>
+      <inertia ixx="2.83323e-07" ixy="0.0" ixz="0.0" iyy="3.37453e-07" iyz="0.0" izz="6.08227e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part7 t308-1.stl"/>
+      </geometry>
+      <material name="Part7 t308-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part7 t308-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part7 t308-1--Part6 t308-1" type="fixed">
+    <origin xyz="-0.0025002846781636556 0.005999459745798477 0.013500130676652067" rpy="1.5707960226881565 0 -2.5129017686634215e-07"/>
+    <parent link="Part6 t308-1"/>
+    <child link="Part7 t308-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part5 upper cover-13">
+    <inertial>
+      <origin xyz="-0.0009065253448591326 -0.001414613953002422 4.0385500810202757e-07" rpy="0 0 0"/>
+      <mass value="0.000571491"/>
+      <inertia ixx="1.64579e-08" ixy="3.09331e-09" ixz="-3.94469e-15" iyy="5.74436e-08" iyz="2.85572e-15" izz="5.33815e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-1 part5 upper cover-1.stl"/>
+      </geometry>
+      <material name="Part5 upper cover-13_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-1 part5 upper cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part7 t308-1--Part5 upper cover-1" type="fixed">
+    <origin xyz="7.714880952969239e-07 -5.94921333363363e-07 0.001499624636659036" rpy="1.5707964134549959 -1.45010798401548e-07 -3.141591368913652"/>
+    <parent link="Part7 t308-1"/>
+    <child link="Part5 upper cover-13"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="gear4-13">
+    <inertial>
+      <origin xyz="0.0015000816204136513 -3.070859718734553e-07 -1.9441057440283682e-07" rpy="0 0 0"/>
+      <mass value="2.62857e-07"/>
+      <inertia ixx="2.6267e-12" ixy="0.0" ixz="0.0" iyy="2.05024e-12" iyz="0.0" izz="2.05024e-12"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.055674048648095824 -0.0009669331601891984 0.0008180760314222407" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-1 gear4-1.stl"/>
+      </geometry>
+      <material name="gear4-13_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.055674048648095824 -0.0009669331601891984 0.0008180760314222407" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-1 gear4-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gear4-1--Part5 upper cover-13" type="continuous">
+    <origin xyz="-0.0054997728753448105 0.0035001800406416206 0" rpy="0.08364022090155693 8.2480554837459e-07 -1.5707963369758688"/>
+    <axis xyz="-0.9999994519240012 -3.501430633212621e-07 -7.579722685613355e-07"/>
+    <parent link="Part5 upper cover-13"/>
+    <child link="gear4-13"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part7-13">
+    <inertial>
+      <origin xyz="0 -0.05530341936945009 2.150261146915966e-07" rpy="0 0 0"/>
+      <mass value="0.000418074"/>
+      <inertia ixx="8.49393e-09" ixy="0.0" ixz="0.0" iyy="1.5716e-08" iyz="0.0" izz="8.49393e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.056499584396050614 -2.6082209175770643e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-1 part7-1.stl"/>
+      </geometry>
+      <material name="Part7-13_color">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.056499584396050614 -2.6082209175770643e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-1 part7-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gear4-1--Part7-13" type="continuous">
+    <origin xyz="0.04999984001963996 0 0" rpy="2.8023608495244127e-06 -1.3119236958989238 -1.5707986439657848"/>
+    <axis xyz="-4.990821517170119e-08 -0.9999994519243479 2.9889643052283255e-08"/>
+    <parent link="gear4-13"/>
+    <child link="Part7-13"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part8 t308-1">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.0011084"/>
+      <inertia ixx="2.13458e-08" ixy="0.0" ixz="0.0" iyy="7.54907e-08" iyz="0.0" izz="9.51784e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part8 t308-1.stl"/>
+      </geometry>
+      <material name="Part8 t308-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part8 t308-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part7-1--Part8 t308-1" type="fixed">
+    <origin xyz="0 -0.057999666016203946 0" rpy="-2.6868523403809834 -1.5707958163196858 -2.0255364933238096"/>
+    <parent link="Part7-13"/>
+    <child link="Part8 t308-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part4 t308-2">
+    <inertial>
+      <origin xyz="0 0.002901301237589901 0.002500231614070682" rpy="0 0 0"/>
+      <mass value="0.00536015"/>
+      <inertia ixx="9.48559e-07" ixy="0.0" ixz="5.82617e-14" iyy="5.84851e-07" iyz="0.0" izz="1.5111e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part4 t308-2.stl"/>
+      </geometry>
+      <material name="Part4 t308-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part4 t308-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part8 t308-1--Part4 t308-2" type="fixed">
+    <origin xyz="5.242366567903556e-06 0.003999410125378973 0.015000175837856414" rpy="1.5707965090183689 -2.699279762175022e-07 -3.1415925427164426"/>
+    <parent link="Part8 t308-1"/>
+    <child link="Part4 t308-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-50">
+    <inertial>
+      <origin xyz="0.003652081782098922 0 -8.104692017230075e-07" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 8 - z --- 8s-5.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-50_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 8 - z --- 8s-5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 t308-2--ISO 7045 - M1.6 x 8 - Z --- 8S-5" type="fixed">
+    <origin xyz="0.014000101999281034 -3.40482898764094e-07 0.00630076859548083" rpy="0.9996943791093964 1.5707956326181827 -0.35419529733310395"/>
+    <parent link="Part4 t308-2"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-50"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 12 - Z --- 12S-1">
+    <inertial>
+      <origin xyz="0.0026653206113737074 0 -1.9640615098182046e-07" rpy="0 0 0"/>
+      <mass value="0.000240531"/>
+      <inertia ixx="1.10356e-09" ixy="4.0807e-20" ixz="-3.095e-20" iyy="5.20119e-09" iyz="0.0" izz="5.20119e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0031000641920756467 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m4 x 12 - z --- 12s-1.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 12 - Z --- 12S-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0031000641920756467 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m4 x 12 - z --- 12s-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 t308-2--ISO 7045 - M4 x 12 - Z --- 12S-1" type="continuous">
+    <origin xyz="0.008499862983704587 0.015999520890616042 0.005000840982173689" rpy="2.308254054497331 1.570795802081452 0.6114751274763275"/>
+    <axis xyz="1.000000285788317 -2.5474976445005737e-07 4.6874698811372184e-07"/>
+    <parent link="Part4 t308-2"/>
+    <child link="ISO 7045 - M4 x 12 - Z --- 12S-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part5 upper cover-12">
+    <inertial>
+      <origin xyz="-0.000906702073933674 -0.0014151055511502988 -7.92608416039231e-07" rpy="0 0 0"/>
+      <mass value="0.000571491"/>
+      <inertia ixx="1.64579e-08" ixy="3.09331e-09" ixz="-3.94469e-15" iyy="5.74436e-08" iyz="2.85572e-15" izz="5.33815e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-3 part5 upper cover-1.stl"/>
+      </geometry>
+      <material name="Part5 upper cover-12_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-3 part5 upper cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 t308-2--Part5 upper cover-1" type="fixed">
+    <origin xyz="2.1349487683286483e-07 4.054282238680207e-07 0.004000420076697951" rpy="1.5707965090183689 1.1087339999910089e-07 3.141592383661837"/>
+    <parent link="Part4 t308-2"/>
+    <child link="Part5 upper cover-12"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part4 middle cover-12">
+    <inertial>
+      <origin xyz="0.00027164871972906734 0.005813114103709487 -6.247585779550757e-07" rpy="0 0 0"/>
+      <mass value="0.000918938"/>
+      <inertia ixx="2.74071e-08" ixy="-8.04482e-10" ixz="0.0" iyy="7.54955e-08" iyz="0.0" izz="6.55342e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-3 part4 middle cover-1.stl"/>
+      </geometry>
+      <material name="Part4 middle cover-12_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-3 part4 middle cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 middle cover-1--Part5 upper cover-12" type="fixed">
+    <origin xyz="1.2214526762255318e-07 -0.016499742209562226 0" rpy="0 0 0"/>
+    <parent link="Part5 upper cover-12"/>
+    <child link="Part4 middle cover-12"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part3 bottom cover-12">
+    <inertial>
+      <origin xyz="0.00012897369502978817 0.001668021499365846 -2.522771293533843e-07" rpy="0 0 0"/>
+      <mass value="0.000511683"/>
+      <inertia ixx="1.00548e-08" ixy="-1.70412e-10" ixz="0.0" iyy="3.57335e-08" iyz="0.0" izz="2.78433e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-3 part3 bottom cover-1.stl"/>
+      </geometry>
+      <material name="Part3 bottom cover-12_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-3 part3 bottom cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 middle cover-1--Part3 bottom cover-12" type="fixed">
+    <origin xyz="-3.9526455997140886e-07 -0.0050001748530317525 -5.318598984282996e-07" rpy="0 0 0"/>
+    <parent link="Part4 middle cover-12"/>
+    <child link="Part3 bottom cover-12"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="gear4-12">
+    <inertial>
+      <origin xyz="0.0014999599191606733 -2.50725956552067e-07 4.2195742136486025e-07" rpy="0 0 0"/>
+      <mass value="2.62857e-07"/>
+      <inertia ixx="2.6267e-12" ixy="0.0" ixz="0.0" iyy="2.05024e-12" iyz="0.0" izz="2.05024e-12"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.05567422121628145 -0.0009664674564917042 0.0008183920919104803" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-3 gear4-1.stl"/>
+      </geometry>
+      <material name="gear4-12_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.05567422121628145 -0.0009664674564917042 0.0008183920919104803" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-3 gear4-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gear4-1--Part5 upper cover-12" type="continuous">
+    <origin xyz="-0.005499733962318731 0.003500134759943714 0" rpy="3.122933818682631 -3.60971849973365e-07 -1.5707964811047768"/>
+    <axis xyz="-1.0000002857884 1.529438741210143e-07 -3.077457492173252e-07"/>
+    <parent link="Part5 upper cover-12"/>
+    <child link="gear4-12"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part7-12">
+    <inertial>
+      <origin xyz="5.311065505962664e-07 -0.05530474964457191 6.849443018874801e-07" rpy="0 0 0"/>
+      <mass value="0.000418074"/>
+      <inertia ixx="8.49393e-09" ixy="0.0" ixz="0.0" iyy="1.5716e-08" iyz="0.0" izz="8.49393e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="1.3473877765596276e-07 -0.05650097905980941 5.146117711407605e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-3 part7-1.stl"/>
+      </geometry>
+      <material name="Part7-12_color">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.3473877765596276e-07 -0.05650097905980941 5.146117711407605e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-3 part7-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="gear4-1--Part7-12" type="continuous">
+    <origin xyz="0.0500006759272411 5.272037759684878e-07 7.355746478587832e-07" rpy="3.1415925401569953 1.2104068765671006 1.5707965533826918"/>
+    <axis xyz="4.2181360096482656e-07 -1.0000002857883055 -3.6006022036128016e-07"/>
+    <parent link="gear4-12"/>
+    <child link="Part7-12"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 3 - Z --- 3S-3">
+    <inertial>
+      <origin xyz="0.00029404908002150787 -3.663305617688378e-07 0" rpy="0 0 0"/>
+      <mass value="1.25577e-05"/>
+      <inertia ixx="1.08233e-11" ixy="7.43624e-22" ixz="-7.24675e-22" iyy="2.13943e-11" iyz="0.0" izz="2.13943e-11"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0012999295245194956 -2.8956031897925394e-07 -3.839757679591216e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 3 - z --- 3s-3.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 3 - Z --- 3S-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0012999295245194956 -2.8956031897925394e-07 -3.839757679591216e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 3 - z --- 3s-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part7-1--ISO 7045 - M1.6 x 3 - Z --- 3S-3" type="continuous">
+    <origin xyz="0 -0.05600044038986765 3.752447768068379e-07" rpy="3.0632845881472446 -1.9085378941824502e-07 1.5707968635542018"/>
+    <axis xyz="-1.0000002857884382 -1.278302909635265e-07 1.5969585054342872e-07"/>
+    <parent link="Part7-12"/>
+    <child link="ISO 7045 - M1.6 x 3 - Z --- 3S-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-40">
+    <inertial>
+      <origin xyz="0.0036513363204889945 1.4678541646051535e-07 2.3050328978868606e-07" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 8 - z --- 8s-4.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-40_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 8 - z --- 8s-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 t308-2--ISO 7045 - M1.6 x 8 - Z --- 8S-4" type="fixed">
+    <origin xyz="-0.014000175157268147 0 0.006300597556228429" rpy="-1.2070631949485442 1.570796142978801 -0.8578487666424793"/>
+    <parent link="Part4 t308-2"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-40"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M2.5 x 20 - Z --- 20S-2">
+    <inertial>
+      <origin xyz="0.009223637073964612 3.558938830305891e-07 0" rpy="0 0 0"/>
+      <mass value="0.000113667"/>
+      <inertia ixx="1.49757e-10" ixy="1.999e-19" ixz="6.46512e-20" iyy="5.44497e-09" iyz="0.0" izz="5.44497e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m2.5 x 20 - z --- 20s-2.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M2.5 x 20 - Z --- 20S-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m2.5 x 20 - z --- 20s-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="ISO 7045 - M2.5 x 20 - Z --- 20S-2--Part4 t308-2" type="fixed">
+    <origin xyz="0.014000039258794506 -0.009999673591311722 0.007100785084723775" rpy="-0.44599628462285157 1.5707959384898311 0.9910302926314951"/>
+    <parent link="Part4 t308-2"/>
+    <child link="ISO 7045 - M2.5 x 20 - Z --- 20S-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="part2 t307-1">
+    <inertial>
+      <origin xyz="0.002499714695561067 5.474609109795692e-07 -3.7560983129347747e-07" rpy="0 0 0"/>
+      <mass value="3.69039e-06"/>
+      <inertia ixx="1.297e-09" ixy="1.47978e-17" ixz="1.43627e-17" iyy="1.96602e-10" iyz="2.31519e-10" izz="1.11576e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part2 t307-1.stl"/>
+      </geometry>
+      <material name="part2 t307-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part2 t307-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 t308-2--part2 t307-1" type="fixed">
+    <origin xyz="0.00850002482348533 0.016000372644171756 4.977691208871149e-07" rpy="-2.933961690190499 1.570796064560609 0.1906471961591788"/>
+    <parent link="Part4 t308-2"/>
+    <child link="part2 t307-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part3 t307-1">
+    <inertial>
+      <origin xyz="-0.010260550476338892 0.04449412905325109 8.456581420401843e-07" rpy="0 0 0"/>
+      <mass value="0.0078945"/>
+      <inertia ixx="4.66878e-06" ixy="-3.35141e-07" ixz="7.23759e-14" iyy="2.3998e-07" iyz="6.9068e-13" izz="4.79113e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part3 t307-1.stl"/>
+      </geometry>
+      <material name="Part3 t307-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part3 t307-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="part2 t307-1--Part3 t307-1" type="fixed">
+    <origin xyz="0.002499548189829698 -0.014410624035039357 0.008469131405726693" rpy="-1.5017489464485507 -1.5707960173849496 -1.6398435959144855"/>
+    <parent link="part2 t307-1"/>
+    <child link="Part3 t307-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 10 - Z --- 10S-5">
+    <inertial>
+      <origin xyz="0.0024588310212820264 0 0" rpy="0 0 0"/>
+      <mass value="0.000106628"/>
+      <inertia ixx="2.37294e-10" ixy="1.99088e-20" ixz="-2.56674e-18" iyy="1.56137e-09" iyz="0.0" izz="1.56137e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.002399738702148116 1.8016388540331024e-07 3.591009475334417e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m3 x 10 - z --- 10s-5.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 10 - Z --- 10S-5_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.002399738702148116 1.8016388540331024e-07 3.591009475334417e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m3 x 10 - z --- 10s-5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part3 t307-1--ISO 7045 - M3 x 10 - Z --- 10S-5" type="continuous">
+    <origin xyz="-0.00974929079339204 -1.3784227990976117e-07 -0.004999800396703918" rpy="1.8539940659116987 -1.5707960911346202 -1.607555322103442"/>
+    <axis xyz="-1.0000002857884382 -1.278302909635265e-07 1.5969585054342872e-07"/>
+    <parent link="Part3 t307-1"/>
+    <child link="ISO 7045 - M3 x 10 - Z --- 10S-5"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 10 - Z --- 10S-2">
+    <inertial>
+      <origin xyz="0.0024588310212820402 0 0" rpy="0 0 0"/>
+      <mass value="0.000106628"/>
+      <inertia ixx="2.37294e-10" ixy="1.99088e-20" ixz="-2.56674e-18" iyy="1.56137e-09" iyz="0.0" izz="1.56137e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0024000722291464965 -1.7686404221034513e-07 -5.134188518218785e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m3 x 10 - z --- 10s-2.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 10 - Z --- 10S-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0024000722291464965 -1.7686404221034513e-07 -5.134188518218785e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m3 x 10 - z --- 10s-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part3 t307-1--ISO 7045 - M3 x 10 - Z --- 10S-2" type="continuous">
+    <origin xyz="-0.009749577094678608 0.02500007371518484 -0.004999806567282633" rpy="1.8539940659116987 -1.5707960911346202 -1.607555322103442"/>
+    <axis xyz="-1.0000002857884382 -1.278302909635265e-07 1.5969585054342872e-07"/>
+    <parent link="Part3 t307-1"/>
+    <child link="ISO 7045 - M3 x 10 - Z --- 10S-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 25 - Z --- 25S-10">
+    <inertial>
+      <origin xyz="0.011801229835331974 -6.04385829217069e-07 0" rpy="0 0 0"/>
+      <mass value="0.00019805"/>
+      <inertia ixx="3.27492e-10" ixy="7.501e-19" ixz="-2.66362e-17" iyy="1.44559e-08" iyz="0.0" izz="1.44559e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m3 x 25 - z --- 25s-1.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 25 - Z --- 25S-10_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m3 x 25 - z --- 25s-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="ISO 7045 - M3 x 25 - Z --- 25S-1--part2 t307-1" type="fixed">
+    <origin xyz="-0.01789981020958077 0.009641144251692615 -0.01865627159909078" rpy="2.8963428578525012 -1.8583765135565516e-07 1.6757570459045494e-07"/>
+    <parent link="part2 t307-1"/>
+    <child link="ISO 7045 - M3 x 25 - Z --- 25S-10"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part9 t308-2">
+    <inertial>
+      <origin xyz="-0.008333246634049385 -1.737801790524518e-07 -0.000749999003935943" rpy="0 0 0"/>
+      <mass value="0.000191876"/>
+      <inertia ixx="7.05784e-10" ixy="0.0" ixz="0.0" iyy="6.86777e-09" iyz="0.0" izz="7.50202e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.008000086058713246 -3.413639659555212e-07 -0.0007499446223907386" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part9 t308-2.stl"/>
+      </geometry>
+      <material name="Part9 t308-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.008000086058713246 -3.413639659555212e-07 -0.0007499446223907386" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part9 t308-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part9 t308-2--ISO 7045 - M3 x 25 - Z --- 25S-1" type="continuous">
+    <origin xyz="0.002399738702200331 0 -4.0132014628158075e-07" rpy="-1.570795749230631 -1.2035121240289433 1.5707959996390355"/>
+    <axis xyz="1.4860132241389934e-07 -3.13967879111976e-07 -1.000000285788399"/>
+    <parent link="ISO 7045 - M3 x 25 - Z --- 25S-10"/>
+    <child link="Part9 t308-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 3 - Z --- 3S-4">
+    <inertial>
+      <origin xyz="0.0002940490799669057 -2.5277601101159064e-07 -2.7326709098329793e-07" rpy="0 0 0"/>
+      <mass value="1.25577e-05"/>
+      <inertia ixx="1.08233e-11" ixy="7.43624e-22" ixz="-7.24675e-22" iyy="2.13943e-11" iyz="0.0" izz="2.13943e-11"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0012999295244642065 1.6807419725428652e-07 -4.5075187601884004e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 3 - z --- 3s-4.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 3 - Z --- 3S-4_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0012999295244642065 1.6807419725428652e-07 -4.5075187601884004e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 3 - z --- 3s-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part9 t308-2--ISO 7045 - M1.6 x 3 - Z --- 3S-4" type="continuous">
+    <origin xyz="-0.015999732490833085 -4.656013466719511e-07 0" rpy="-1.3967917393272054 1.5707960355202757 -1.2533324152875354"/>
+    <axis xyz="-1.000000285788457 4.5111523322427516e-08 -5.175974987503551e-08"/>
+    <parent link="Part9 t308-2"/>
+    <child link="ISO 7045 - M1.6 x 3 - Z --- 3S-4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Hexagon Thin Nut ISO - 4035 - M3 - N-2">
+    <inertial>
+      <origin xyz="2.3245598811116874e-07 -1.8311778271495882e-07 -0.0008990333210911056" rpy="0 0 0"/>
+      <mass value="3.75366e-05"/>
+      <inertia ixx="1.03444e-10" ixy="-1.45217e-17" ixz="0.0" iyy="1.03443e-10" iyz="5.86549e-20" izz="1.873e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m3 - n-2.stl"/>
+      </geometry>
+      <material name="Hexagon Thin Nut ISO - 4035 - M3 - N-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m3 - n-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="part2 t307-1--Hexagon Thin Nut ISO - 4035 - M3 - N-2" type="fixed">
+    <origin xyz="0.006799813511387552 0.009642153936532824 -0.018656423630335872" rpy="-1.5707965442117855 -0.033435950284511254 -1.5707963262348477"/>
+    <parent link="part2 t307-1"/>
+    <child link="Hexagon Thin Nut ISO - 4035 - M3 - N-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Spring Pin ISO 8752 - 5 x 14 - St-1">
+    <inertial>
+      <origin xyz="0.006999931125930212 -6.843522552593402e-07 -5.223757168243415e-05" rpy="0 0 0"/>
+      <mass value="0.0001682"/>
+      <inertia ixx="7.09061e-10" ixy="0.0" ixz="0.0" iyy="2.99735e-09" iyz="0.0" izz="3.01592e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 spring pin iso 8752 - 5 x 14 - st-1.stl"/>
+      </geometry>
+      <material name="Spring Pin ISO 8752 - 5 x 14 - St-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 spring pin iso 8752 - 5 x 14 - st-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="part2 t307-1--Spring Pin ISO 8752 - 5 x 14 - St-1" type="fixed">
+    <origin xyz="0 0.009642312655935459 -0.018656333526140934" rpy="2.895153600970381 0 -3.141592306831715"/>
+    <parent link="part2 t307-1"/>
+    <child link="Spring Pin ISO 8752 - 5 x 14 - St-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part10 t308-1">
+    <inertial>
+      <origin xyz="0 0.046499883892006585 -1.610837801133136e-07" rpy="0 0 0"/>
+      <mass value="7.28948e-05"/>
+      <inertia ixx="3.60203e-10" ixy="0.0" ixz="0.0" iyy="6.11063e-10" iyz="0.0" izz="3.60203e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-8.211358144549763e-07 0.04499959044582817 -1.829415443438398e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part10 t308-1.stl"/>
+      </geometry>
+      <material name="Part10 t308-1_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-8.211358144549763e-07 0.04499959044582817 -1.829415443438398e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part10 t308-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="part2 t307-1--Part10 t308-1" type="continuous">
+    <origin xyz="0.049999765298600146 0 2.896656257078689e-07" rpy="3.141592409731223 -1.1960976127899787 -1.5707966306689913"/>
+    <axis xyz="5.158552135453576e-08 1.0000002857881785 7.476380232407376e-07"/>
+    <parent link="part2 t307-1"/>
+    <child link="Part10 t308-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Hexagon Thin Nut ISO - 4035 - M4 - N-1">
+    <inertial>
+      <origin xyz="3.859292444646778e-07 -3.1079176626702676e-07 0.001100888166194497" rpy="0 0 0"/>
+      <mass value="7.27422e-05"/>
+      <inertia ixx="3.26126e-10" ixy="-4.77772e-17" ixz="0.0" iyy="3.26123e-10" iyz="1.76128e-19" izz="5.9587e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="2.959666963869845e-07 -6.995150649280468e-07 0.002199374780041466" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m4 - n-1.stl"/>
+      </geometry>
+      <material name="Hexagon Thin Nut ISO - 4035 - M4 - N-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.959666963869845e-07 -6.995150649280468e-07 0.002199374780041466" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m4 - n-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part10 t308-1--Hexagon Thin Nut ISO - 4035 - M4 - N-1" type="continuous">
+    <origin xyz="-8.211358144549763e-07 0.04499959044582817 -1.829415443438398e-07" rpy="1.5707991923278286 -1.3449258988372808 -3.4016984570942013e-06"/>
+    <axis xyz="2.1626300875099425e-08 -5.669228219096212e-07 1.0000002857882986"/>
+    <parent link="Part10 t308-1"/>
+    <child link="Hexagon Thin Nut ISO - 4035 - M4 - N-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 12 - Z --- 12S-5">
+    <inertial>
+      <origin xyz="0.005765384803299613 2.6022661871183406e-07 0" rpy="0 0 0"/>
+      <mass value="0.000240531"/>
+      <inertia ixx="1.10356e-09" ixy="4.0807e-20" ixz="-3.095e-20" iyy="5.20119e-09" iyz="0.0" izz="5.20119e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m4 x 12 - z --- 12s-5.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 12 - Z --- 12S-5_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m4 x 12 - z --- 12s-5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 t308-2--ISO 7045 - M4 x 12 - Z --- 12S-5" type="fixed">
+    <origin xyz="-0.0084997117144483 0.01599975769579519 0.008100575007190004" rpy="-0.3568855753965629 1.5707959808339902 -0.7715074363615844"/>
+    <parent link="Part4 t308-2"/>
+    <child link="ISO 7045 - M4 x 12 - Z --- 12S-5"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="part1 t307-1">
+    <inertial>
+      <origin xyz="0.0025004601573967444 0 0" rpy="0 0 0"/>
+      <mass value="2.78672e-06"/>
+      <inertia ixx="7.65902e-10" ixy="0.0" ixz="0.0" iyy="4.05283e-11" iyz="7.22833e-12" izz="7.36985e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part1 t307-1.stl"/>
+      </geometry>
+      <material name="part1 t307-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part1 t307-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 t308-2--part1 t307-1" type="continuous">
+    <origin xyz="-0.00850010612549984 0.015999976884397388 1.2465908090439348e-06" rpy="2.2128971589060353 1.5707959550772528 -0.9315576162643232"/>
+    <axis xyz="1.0000002857884398 -1.6622713390479493e-07 1.0422937590792714e-07"/>
+    <parent link="Part4 t308-2"/>
+    <child link="part1 t307-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part3 t307-2">
+    <inertial>
+      <origin xyz="-0.010260163912240716 0.04449462556819478 1.0198562558350055e-06" rpy="0 0 0"/>
+      <mass value="0.0078945"/>
+      <inertia ixx="4.66878e-06" ixy="-3.35141e-07" ixz="7.23759e-14" iyy="2.3998e-07" iyz="6.9068e-13" izz="4.79113e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part3 t307-2.stl"/>
+      </geometry>
+      <material name="Part3 t307-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part3 t307-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="part1 t307-1--Part3 t307-2" type="fixed">
+    <origin xyz="0.0025012510905284557 -0.01441067244672914 -0.008469798853291133" rpy="1.9762711271400513 1.5707962365409145 -1.1653216339889807"/>
+    <parent link="part1 t307-1"/>
+    <child link="Part3 t307-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 10 - Z --- 10S-3">
+    <inertial>
+      <origin xyz="0.0024588310212820125 0 0" rpy="0 0 0"/>
+      <mass value="0.000106628"/>
+      <inertia ixx="2.37294e-10" ixy="1.99088e-20" ixz="-2.56674e-18" iyy="1.56137e-09" iyz="0.0" izz="1.56137e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0024000722291464965 -1.7686404211320061e-07 -5.134188518218785e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m3 x 10 - z --- 10s-3.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 10 - Z --- 10S-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0024000722291464965 -1.7686404211320061e-07 -5.134188518218785e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m3 x 10 - z --- 10s-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part3 t307-2--ISO 7045 - M3 x 10 - Z --- 10S-3" type="continuous">
+    <origin xyz="-0.009749454480057262 0.024999853563028154 0.005000148814629665" rpy="-0.8431701995381135 1.5707962096529924 -1.1037309801925745"/>
+    <axis xyz="1.0000002857884382 1.278302909635265e-07 -1.5969585054342872e-07"/>
+    <parent link="Part3 t307-2"/>
+    <child link="ISO 7045 - M3 x 10 - Z --- 10S-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M3 x 10 - Z --- 10S-4">
+    <inertial>
+      <origin xyz="0.0024588310212820402 0 0" rpy="0 0 0"/>
+      <mass value="0.000106628"/>
+      <inertia ixx="2.37294e-10" ixy="1.99088e-20" ixz="-2.56674e-18" iyy="1.56137e-09" iyz="0.0" izz="1.56137e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.002400649331102636 6.322977876664637e-07 -6.239198260815648e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m3 x 10 - z --- 10s-4.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M3 x 10 - Z --- 10S-4_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.002400649331102636 6.322977876664637e-07 -6.239198260815648e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m3 x 10 - z --- 10s-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part3 t307-2--ISO 7045 - M3 x 10 - Z --- 10S-4" type="continuous">
+    <origin xyz="-0.009749665127881668 0 0.0049998977881864776" rpy="-0.8431701995381135 1.5707962096529924 -1.1037309801925745"/>
+    <axis xyz="1.0000002857884382 1.278302909635265e-07 -1.5969585054342872e-07"/>
+    <parent link="Part3 t307-2"/>
+    <child link="ISO 7045 - M3 x 10 - Z --- 10S-4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part10 t308-2">
+    <inertial>
+      <origin xyz="0 0.04649988389200657 -1.6108378012719138e-07" rpy="0 0 0"/>
+      <mass value="7.28948e-05"/>
+      <inertia ixx="3.60203e-10" ixy="0.0" ixz="0.0" iyy="6.11063e-10" iyz="0.0" izz="3.60203e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0.04499992397303873 -6.486390781712537e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part10 t308-2.stl"/>
+      </geometry>
+      <material name="Part10 t308-2_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.04499992397303873 -6.486390781712537e-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part10 t308-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="part1 t307-1--Part10 t308-2" type="continuous">
+    <origin xyz="0.0500008442872551 -6.836499651385886e-07 -3.0707263426466014e-07" rpy="3.1415923068106406 -1.1819759675172152 -1.570796883515223"/>
+    <axis xyz="5.158552135453576e-08 1.0000002857881785 7.476380232407376e-07"/>
+    <parent link="part1 t307-1"/>
+    <child link="Part10 t308-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Hexagon Thin Nut ISO - 4035 - M4 - N-2">
+    <inertial>
+      <origin xyz="3.8592924442304444e-07 -3.1079176626702676e-07 0.001100888166194497" rpy="0 0 0"/>
+      <mass value="7.27422e-05"/>
+      <inertia ixx="3.26126e-10" ixy="-4.77772e-17" ixz="0.0" iyy="3.26123e-10" iyz="1.76128e-19" izz="5.9587e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="-2.4981620332792387e-07 2.3476291222124246e-07 0.0022002854093226693" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m4 - n-2.stl"/>
+      </geometry>
+      <material name="Hexagon Thin Nut ISO - 4035 - M4 - N-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.4981620332792387e-07 2.3476291222124246e-07 0.0022002854093226693" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m4 - n-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part10 t308-2--Hexagon Thin Nut ISO - 4035 - M4 - N-2" type="continuous">
+    <origin xyz="0 0.04499992397303873 -6.486390781712537e-07" rpy="1.5707991923278286 -1.3449258988372808 -3.4016984570942013e-06"/>
+    <axis xyz="2.1626300875099425e-08 -5.669228219096212e-07 1.0000002857882986"/>
+    <parent link="Part10 t308-2"/>
+    <child link="Hexagon Thin Nut ISO - 4035 - M4 - N-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Spring Pin ISO 13337 - 4 x 8 - St-1">
+    <inertial>
+      <origin xyz="0.004000350075253616 1.9755777702808175e-07 -4.526849223779328e-05" rpy="0 0 0"/>
+      <mass value="4.21329e-05"/>
+      <inertia ixx="1.31046e-10" ixy="0.0" ixz="0.0" iyy="2.8149e-10" iyz="0.0" izz="2.84924e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 spring pin iso 13337 - 4 x 8 - st-1.stl"/>
+      </geometry>
+      <material name="Spring Pin ISO 13337 - 4 x 8 - St-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 spring pin iso 13337 - 4 x 8 - st-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 t308-2--Spring Pin ISO 13337 - 4 x 8 - St-1" type="fixed">
+    <origin xyz="-0.01400007225633132 -0.010000237449753827 8.752386355739827e-07" rpy="-0.7028537316530564 1.5707961169308184 -0.9785098123170481"/>
+    <parent link="Part4 t308-2"/>
+    <child link="Spring Pin ISO 13337 - 4 x 8 - St-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M2.5 x 20 - Z --- 20S-1">
+    <inertial>
+      <origin xyz="0.009222648037682128 -6.077617824562509e-07 8.964729282801009e-07" rpy="0 0 0"/>
+      <mass value="0.000113667"/>
+      <inertia ixx="1.49757e-10" ixy="1.999e-19" ixz="6.46512e-20" iyy="5.44497e-09" iyz="0.0" izz="5.44497e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m2.5 x 20 - z --- 20s-1.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M2.5 x 20 - Z --- 20S-1_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m2.5 x 20 - z --- 20s-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 t308-2--ISO 7045 - M2.5 x 20 - Z --- 20S-1" type="fixed">
+    <origin xyz="-0.014000341903516622 -0.01000012699830835 0.007100036943730778" rpy="-0.25793142512159095 1.5707958578807082 0.6840619358897396"/>
+    <parent link="Part4 t308-2"/>
+    <child link="ISO 7045 - M2.5 x 20 - Z --- 20S-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Spring Pin ISO 13337 - 4 x 8 - St-2">
+    <inertial>
+      <origin xyz="0.003999604606770429 2.849796558205761e-07 -4.478736749474743e-05" rpy="0 0 0"/>
+      <mass value="4.21329e-05"/>
+      <inertia ixx="1.31046e-10" ixy="0.0" ixz="0.0" iyy="2.8149e-10" iyz="0.0" izz="2.84924e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 spring pin iso 13337 - 4 x 8 - st-2.stl"/>
+      </geometry>
+      <material name="Spring Pin ISO 13337 - 4 x 8 - St-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 spring pin iso 13337 - 4 x 8 - st-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 t308-2--Spring Pin ISO 13337 - 4 x 8 - St-2" type="continuous">
+    <origin xyz="0.01399986691543409 -0.010000019562963106 3.0081598538511667e-07" rpy="-0.6296218538587467 1.5707959457851488 -0.8930446737092804"/>
+    <axis xyz="1.0000002857884382 1.278302909635265e-07 -1.5969585054342872e-07"/>
+    <parent link="Part4 t308-2"/>
+    <child link="Spring Pin ISO 13337 - 4 x 8 - St-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part5 t308-2">
+    <inertial>
+      <origin xyz="-0.006170395283019214 0.0012695232058674705 -0.002500254163291901" rpy="0 0 0"/>
+      <mass value="0.00195522"/>
+      <inertia ixx="3.30337e-08" ixy="0.0" ixz="0.0" iyy="2.10819e-07" iyz="0.0" izz="2.35717e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.006169779677187459 0.013499487332160692 -0.004999845347987843" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part5 t308-2.stl"/>
+      </geometry>
+      <material name="Part5 t308-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.006169779677187459 0.013499487332160692 -0.004999845347987843" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 part5 t308-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part8 t308-1--Part5 t308-2" type="prismatic">
+    <origin xyz="0.006175004840202336 -0.00899995458832753 0.0015001138728513719" rpy="1.570796144571424 2.699279763493412e-07 1.1087335077719515e-07"/>
+    <axis xyz="0.9999999740149395 -5.3074876549263905e-08 3.4274080523699624e-07"/>
+    <parent link="Part8 t308-1"/>
+    <child link="Part5 t308-2"/>
+    <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Hexagon Thin Nut ISO - 4035 - M2.5 - N-4">
+    <inertial>
+      <origin xyz="-1.6250528805938913e-07 4.848863019019101e-07 -0.0007993908546370387" rpy="0 0 0"/>
+      <mass value="2.88028e-05"/>
+      <inertia ixx="6.3552e-11" ixy="-8.95349e-18" ixz="0.0" iyy="6.35516e-11" iyz="3.42312e-20" izz="1.15197e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m2.5 - n-4.stl"/>
+      </geometry>
+      <material name="Hexagon Thin Nut ISO - 4035 - M2.5 - N-4_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m2.5 - n-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part5 t308-2--Hexagon Thin Nut ISO - 4035 - M2.5 - N-4" type="fixed">
+    <origin xyz="0.007829951181722528 0.003499777363849793 0.0016003040009092764" rpy="0 4.896235069985074e-07 -2.6773264979112774"/>
+    <parent link="Part5 t308-2"/>
+    <child link="Hexagon Thin Nut ISO - 4035 - M2.5 - N-4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Hexagon Thin Nut ISO - 4035 - M2.5 - N-3">
+    <inertial>
+      <origin xyz="-9.916619423955275e-07 -6.483189874256778e-07 -0.0007992224948592946" rpy="0 0 0"/>
+      <mass value="2.88028e-05"/>
+      <inertia ixx="6.3552e-11" ixy="-8.95349e-18" ixz="0.0" iyy="6.35516e-11" iyz="3.42312e-20" izz="1.15197e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m2.5 - n-3.stl"/>
+      </geometry>
+      <material name="Hexagon Thin Nut ISO - 4035 - M2.5 - N-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m2.5 - n-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part5 t308-2--Hexagon Thin Nut ISO - 4035 - M2.5 - N-3" type="fixed">
+    <origin xyz="-0.020170325974826653 0.003499420748388382 0.0016001329616568902" rpy="0 4.896235069985074e-07 -2.6773264979112774"/>
+    <parent link="Part5 t308-2"/>
+    <child link="Hexagon Thin Nut ISO - 4035 - M2.5 - N-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part4 middle cover-13">
+    <inertial>
+      <origin xyz="0.00027204183857487685 0.005813170493990466 -2.1415824566495267e-07" rpy="0 0 0"/>
+      <mass value="0.000918938"/>
+      <inertia ixx="2.74071e-08" ixy="-8.04482e-10" ixz="0.0" iyy="7.54955e-08" iyz="0.0" izz="6.55342e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-1 part4 middle cover-1.stl"/>
+      </geometry>
+      <material name="Part4 middle cover-13_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-1 part4 middle cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 middle cover-1--Part5 upper cover-13" type="fixed">
+    <origin xyz="0 -0.016499526871991597 0" rpy="0 0 0"/>
+    <parent link="Part5 upper cover-13"/>
+    <child link="Part4 middle cover-13"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part3 bottom cover-13">
+    <inertial>
+      <origin xyz="0.00012893477294351197 0.0016681701637513563 1.0625892184201735e-06" rpy="0 0 0"/>
+      <mass value="0.000511683"/>
+      <inertia ixx="1.00548e-08" ixy="-1.70412e-10" ixz="0.0" iyy="3.57335e-08" iyz="0.0" izz="2.78433e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-1 part3 bottom cover-1.stl"/>
+      </geometry>
+      <material name="Part3 bottom cover-13_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 servo-1 part3 bottom cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 middle cover-1--Part3 bottom cover-13" type="fixed">
+    <origin xyz="3.8080219377789604e-07 -0.005000237258384957 -4.6351764620977676e-07" rpy="0 0 0"/>
+    <parent link="Part4 middle cover-13"/>
+    <child link="Part3 bottom cover-13"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-7">
+    <inertial>
+      <origin xyz="0.0036517679244616463 1.5503393818727673e-07 0" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 8 - z --- 8s-7.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-7_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 8 - z --- 8s-7.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part7 t308-1--ISO 7045 - M1.6 x 8 - Z --- 8S-7" type="fixed">
+    <origin xyz="0.014000465939448703 -1.910285565287495e-07 0.003799804000451115" rpy="-0.34082992390498046 1.5707958747247932 -2.4912590785905526"/>
+    <parent link="Part7 t308-1"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-7"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M1.6 x 8 - Z --- 8S-6">
+    <inertial>
+      <origin xyz="0.0036517679244309487 0 1.4691352312468098e-07" rpy="0 0 0"/>
+      <mass value="2.08213e-05"/>
+      <inertia ixx="1.30654e-11" ixy="1.18884e-21" ixz="-2.79424e-22" iyy="1.74222e-10" iyz="0.0" izz="1.74222e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 8 - z --- 8s-6.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M1.6 x 8 - Z --- 8S-6_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 iso 7045 - m1.6 x 8 - z --- 8s-6.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part7 t308-1--ISO 7045 - M1.6 x 8 - Z --- 8S-6" type="fixed">
+    <origin xyz="-0.013999514428745419 -7.024872808181204e-07 0.0037994588122338413" rpy="-2.127542308609343 1.5707957886739985 -2.8679670679"/>
+    <parent link="Part7 t308-1"/>
+    <child link="ISO 7045 - M1.6 x 8 - Z --- 8S-6"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Hexagon Thin Nut ISO - 4035 - M4 - N-4">
+    <inertial>
+      <origin xyz="-2.093671952196896e-07 -3.3169081545270096e-07 -0.001098198910100795" rpy="0 0 0"/>
+      <mass value="7.27422e-05"/>
+      <inertia ixx="3.26126e-10" ixy="-4.77772e-17" ixz="0.0" iyy="3.26123e-10" iyz="1.76128e-19" izz="5.9587e-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m4 - n-4.stl"/>
+      </geometry>
+      <material name="Hexagon Thin Nut ISO - 4035 - M4 - N-4_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - gripper assem-1 hexagon thin nut iso - 4035 - m4 - n-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part6 t308-1--Hexagon Thin Nut ISO - 4035 - M4 - N-4" type="fixed">
+    <origin xyz="-0.027499455274991536 0.005999843309545942 -0.004699998068045663" rpy="3.1415919880991527 1.2068183967348772e-06 2.462689795596684"/>
+    <parent link="Part6 t308-1"/>
+    <child link="Hexagon Thin Nut ISO - 4035 - M4 - N-4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part4-m-1">
+    <inertial>
+      <origin xyz="0.007846101174933964 -0.0796150530371715 0.007685211919073903" rpy="0 0 0"/>
+      <mass value="0.0050002"/>
+      <inertia ixx="1.3778e-05" ixy="1.35194e-06" ixz="0.0" iyy="1.92099e-07" iyz="0.0" izz="1.39626e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.01804044525186884 -0.21908938482880788 0.009185307455870866" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part4-m-1.stl"/>
+      </geometry>
+      <material name="Part4-m-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.01804044525186884 -0.21908938482880788 0.009185307455870866" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part4-m-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part9-m-1--Part4-m-1" type="continuous">
+    <origin xyz="0.05211045298002075 0.014159210300602132 -0.004314770640528785" rpy="3.141592372173862 -2.433392676298112e-07 -1.9869976938278486"/>
+    <axis xyz="1.4327508901512687e-07 9.794571959043097e-08 -1.0000003413729268"/>
+    <parent link="Part9-m-1"/>
+    <child link="Part4-m-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part3-m-1">
+    <inertial>
+      <origin xyz="-0.007017424396448174 0.07366639834122575 0.007000013097986757" rpy="0 0 0"/>
+      <mass value="0.00239347"/>
+      <inertia ixx="4.98041e-06" ixy="4.73649e-07" ixz="0.0" iyy="5.33612e-08" iyz="0.0" izz="5.03019e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.014500035920157965 -0.08150005320811768 0.00849994413323488" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part3-m-1.stl"/>
+      </geometry>
+      <material name="Part3-m-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.014500035920157965 -0.08150005320811768 0.00849994413323488" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part3-m-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m-1--Part3-m-1" type="continuous">
+    <origin xyz="0.014499951207109773 0.08150000000000002 0.005000002703142846" rpy="3.141592087184745 0 -2.2714251900502385"/>
+    <axis xyz="-5.472611358525725e-08 4.3155856005450133e-07 -1.000000341372847"/>
+    <parent link="Part1-m-1"/>
+    <child link="Part3-m-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 10 - Z --- 10S-2">
+    <inertial>
+      <origin xyz="0.0018526955173368068 0 0" rpy="0 0 0"/>
+      <mass value="0.000219153"/>
+      <inertia ixx="1.06652e-09" ixy="3.80416e-20" ixz="-3.37158e-20" iyy="3.54713e-09" iyz="0.0" izz="3.54713e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.003100016374142388 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 10 - z --- 10s-2.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 10 - Z --- 10S-2_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.003100016374142388 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 10 - z --- 10s-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part3-m-1--ISO 7045 - M4 x 10 - Z --- 10S-2" type="continuous">
+    <origin xyz="-0.014034840369158225 0.14733281089049838 0.005500079047330353" rpy="-0.29639251293224456 -1.5707958956336971 -0.13918897176490239"/>
+    <axis xyz="-1.0000003413728036 4.941008300840544e-07 -1.8065427768998443e-07"/>
+    <parent link="Part3-m-1"/>
+    <child link="ISO 7045 - M4 x 10 - Z --- 10S-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part5 upper cover-1">
+    <inertial>
+      <origin xyz="-0.0009072262400533909 -0.0014152588828272687 0" rpy="0 0 0"/>
+      <mass value="0.000571491"/>
+      <inertia ixx="1.64579e-08" ixy="3.09331e-09" ixz="-3.94469e-15" iyy="5.74436e-08" iyz="2.85572e-15" izz="5.33815e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-5 part5 upper cover-1.stl"/>
+      </geometry>
+      <material name="Part5 upper cover-1_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-5 part5 upper cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m-1--Part5 upper cover-1" type="fixed">
+    <origin xyz="-0.01571466586658345 0.05442530000000002 0.0010000287808545165" rpy="-1.5707962134049707 3.539521639117711e-07 -0.610865041085414"/>
+    <parent link="Part1-m-1"/>
+    <child link="Part5 upper cover-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part4 middle cover-1">
+    <inertial>
+      <origin xyz="0.0002717859896586433 0.00581335736004767 0" rpy="0 0 0"/>
+      <mass value="0.000918938"/>
+      <inertia ixx="2.74071e-08" ixy="-8.04482e-10" ixz="0.0" iyy="7.54955e-08" iyz="0.0" izz="6.55342e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-5 part4 middle cover-1.stl"/>
+      </geometry>
+      <material name="Part4 middle cover-1_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-5 part4 middle cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 middle cover-1--Part5 upper cover-1" type="fixed">
+    <origin xyz="0 -0.016499974177085527 0" rpy="0 0 0"/>
+    <parent link="Part5 upper cover-1"/>
+    <child link="Part4 middle cover-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part3 bottom cover-1">
+    <inertial>
+      <origin xyz="0.00012899158322648985 0.0016680400178549076 0" rpy="0 0 0"/>
+      <mass value="0.000511683"/>
+      <inertia ixx="1.00548e-08" ixy="-1.70412e-10" ixz="0.0" iyy="3.57335e-08" iyz="0.0" izz="2.78433e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-5 part3 bottom cover-1.stl"/>
+      </geometry>
+      <material name="Part3 bottom cover-1_color">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - servo-5 part3 bottom cover-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4 middle cover-1--Part3 bottom cover-1" type="fixed">
+    <origin xyz="0 -0.0050000481317197185 0" rpy="0 0 0"/>
+    <parent link="Part4 middle cover-1"/>
+    <child link="Part3 bottom cover-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Spring Pin ISO 13337 - 6 x 65 - St-4">
+    <inertial>
+      <origin xyz="-0.03249999930842468 0 -6.769999999999693e-05" rpy="0 0 0"/>
+      <mass value="0.000781588"/>
+      <inertia ixx="5.48818e-09" ixy="0.0" ixz="0.0" iyy="2.76229e-07" iyz="0.0" izz="2.76373e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0649999754764137 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - spring pin iso 13337 - 6 x 65 - st-4.stl"/>
+      </geometry>
+      <material name="Spring Pin ISO 13337 - 6 x 65 - St-4_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0649999754764137 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - spring pin iso 13337 - 6 x 65 - st-4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m-1--Spring Pin ISO 13337 - 6 x 65 - St-4" type="continuous">
+    <origin xyz="-0.02141218166765556 0.02825450000000001 0" rpy="-1.5707963277682018 -1.5707960416266176 0"/>
+    <axis xyz="1.000000341372936 -1.0876836342710305e-07 -2.6833645122405e-17"/>
+    <parent link="Part1-m-1"/>
+    <child link="Spring Pin ISO 13337 - 6 x 65 - St-4"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 10 - Z --- 10S-3">
+    <inertial>
+      <origin xyz="0.0018527770847786527 0 0" rpy="0 0 0"/>
+      <mass value="0.000219153"/>
+      <inertia ixx="1.06652e-09" ixy="3.80416e-20" ixz="-3.37158e-20" iyy="3.54713e-09" iyz="0.0" izz="3.54713e-09"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0031000163741423843 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 10 - z --- 10s-3.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 10 - Z --- 10S-3_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0031000163741423843 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 10 - z --- 10s-3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m-1--ISO 7045 - M4 x 10 - Z --- 10S-3" type="continuous">
+    <origin xyz="0.014499951207109773 0.08150000000000002 0.005000002703142846" rpy="1.8998662496704637 1.5707956247867236 -3.077570109691664"/>
+    <axis xyz="-1.0000003413728036 4.941008300840544e-07 -1.8065427768998443e-07"/>
+    <parent link="Part1-m-1"/>
+    <child link="ISO 7045 - M4 x 10 - Z --- 10S-3"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 30 - Z --- 30N-8">
+    <inertial>
+      <origin xyz="0.011338639779291707 0 0" rpy="0 0 0"/>
+      <mass value="0.000487373"/>
+      <inertia ixx="1.62867e-09" ixy="7.18461e-20" ixz="0.0" iyy="5.14606e-08" iyz="0.0" izz="5.14606e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0031000163741392115 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 30 - z --- 30n-8.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 30 - Z --- 30N-8_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0031000163741392115 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 30 - z --- 30n-8.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m-1--ISO 7045 - M4 x 30 - Z --- 30N-8" type="continuous">
+    <origin xyz="0.03323778075052946 0.0282545 0.005000044521775195" rpy="1.5707963283521849 1.570796041626618 -3.141592652421827"/>
+    <axis xyz="-1.0000003413729364 1.087683633715919e-07 -2.746793871989885e-17"/>
+    <parent link="Part1-m-1"/>
+    <child link="ISO 7045 - M4 x 30 - Z --- 30N-8"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="ISO 7045 - M4 x 30 - Z --- 30N-9">
+    <inertial>
+      <origin xyz="0.011338596623921105 0 0" rpy="0 0 0"/>
+      <mass value="0.000487373"/>
+      <inertia ixx="1.62867e-09" ixy="7.18461e-20" ixz="0.0" iyy="5.14606e-08" iyz="0.0" izz="5.14606e-08"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.003100004803921391 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 30 - z --- 30n-9.stl"/>
+      </geometry>
+      <material name="ISO 7045 - M4 x 30 - Z --- 30N-9_color">
+        <color rgba="0.776471 0.756863 0.737255 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.003100004803921391 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - iso 7045 - m4 x 30 - z --- 30n-9.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part1-m-1--ISO 7045 - M4 x 30 - Z --- 30N-9" type="continuous">
+    <origin xyz="-0.02141219117004784 0.02825450000000001 0.005000055249427315" rpy="1.5707963275735408 1.5707960416266182 -3.141592652616488"/>
+    <axis xyz="-1.0000003413729364 1.087683633715919e-07 -2.8254275029096775e-17"/>
+    <parent link="Part1-m-1"/>
+    <child link="ISO 7045 - M4 x 30 - Z --- 30N-9"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="Part2-m1-2">
+    <inertial>
+      <origin xyz="-0.027655079683655343 0 -0.006499999999999999" rpy="0 0 0"/>
+      <mass value="0.021227"/>
+      <inertia ixx="8.43013e-06" ixy="0.0" ixz="0.0" iyy="8.28558e-06" iyz="0.0" izz="1.61178e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.02775003619258715 0 -0.013000000000000001" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part2-m1-2.stl"/>
+      </geometry>
+      <material name="Part2-m1-2_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.02775003619258715 0 -0.013000000000000001" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part2-m1-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part2-m1-2--Part1-m1-1" type="continuous">
+    <origin xyz="0.02775003619258715 0 0" rpy="0 0 0"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <parent link="Part1-m1-1"/>
+    <child link="Part2-m1-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <link name="part5-m1-1">
+    <inertial>
+      <origin xyz="-0.0152107 0 0" rpy="0 0 0"/>
+      <mass value="0.00210687"/>
+      <inertia ixx="2.46265e-07" ixy="0.0" ixz="0.0" iyy="1.76711e-07" iyz="0.0" izz="1.76711e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.015 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part5-m1-1.stl"/>
+      </geometry>
+      <material name="part5-m1-1_color">
+        <color rgba="0.780392 0.760784 0.741176 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.015 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="model - part5-m1-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Part4-m1-1--part5-m1-1" type="continuous">
+    <origin xyz="-0.0273941 -0.0327015 0.005" rpy="-0.02931180362794313 -1.5707963267948966 0"/>
+    <axis xyz="-1.0 0.0 0.0"/>
+    <parent link="Part4-m1-1"/>
+    <child link="part5-m1-1"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <gazebo reference="Hexagon Nut ISO - 4032 - M3 - D - S-6">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part4-m1-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Hexagon Nut ISO - 4032 - M3 - D - S-5">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part3-m1-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 15 ABB - 3735 - 38,DE,NC,38_68-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="part6-m1-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 25 - Z --- 25S-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 25 - Z --- 25S-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 25 - Z --- 25S-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part7-11">
+    <visual>
+      <material>
+        <ambient>1.0 1.0 1.0 1.0</ambient>
+        <diffuse>1.0 1.0 1.0 1.0</diffuse>
+        <specular>0.3 0.3 0.3 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="gear4-11">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part5 upper cover-11">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part4 middle cover-11">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part3 bottom cover-11">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Hexagon Nut ISO - 4032 - M3 - D - S-4">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part1-m1-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part1-m-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part5 upper cover-10">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="gear4-10">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part7-10">
+    <visual>
+      <material>
+        <ambient>1.0 1.0 1.0 1.0</ambient>
+        <diffuse>1.0 1.0 1.0 1.0</diffuse>
+        <specular>0.3 0.3 0.3 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part4 middle cover-10">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part3 bottom cover-10">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Spring Pin ISO 13337 - 6 x 65 - St-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 30 - Z --- 30N-7">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 30 - Z --- 30N-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part2-m-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Parallel Pin ISO 8734 - 8 x 45 - A - St-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part5^Assem1-m-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part15 t310 connector-2">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part5^Assem1-m-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 30 - Z --- 25S-6">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-9">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Spring Pin ISO 8752 - 5 x 24 - St-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-10">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-8">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part9-m-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 25 - Z --- 25S-4">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 25 - Z --- 25S-6">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 25 - Z --- 25S-5">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-5">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part1-m-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part2-m-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Spring Pin ISO 8752 - 5 x 24 - St-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="gear4-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part7-1">
+    <visual>
+      <material>
+        <ambient>1.0 1.0 1.0 1.0</ambient>
+        <diffuse>1.0 1.0 1.0 1.0</diffuse>
+        <specular>0.3 0.3 0.3 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part11-m-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 10 - Z --- 10S-4">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 40 - Z --- 40S-6">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part10-m-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 35 - Z --- 35S-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part15 t310 connector-1">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 35 - Z --- 35S-8">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-4">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part9-m-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part6 t308-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 35 - Z --- 35S-4">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Spring Pin ISO 13337 - 6 x 22 - St-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Spring Pin ISO 13337 - 6 x 22 - St-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part6 t308-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Hexagon Thin Nut ISO - 4035 - M4 - N-5">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part7 t308-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part5 upper cover-13">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="gear4-13">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part7-13">
+    <visual>
+      <material>
+        <ambient>1.0 1.0 1.0 1.0</ambient>
+        <diffuse>1.0 1.0 1.0 1.0</diffuse>
+        <specular>0.3 0.3 0.3 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part8 t308-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part4 t308-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-50">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 12 - Z --- 12S-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part5 upper cover-12">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part4 middle cover-12">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part3 bottom cover-12">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="gear4-12">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part7-12">
+    <visual>
+      <material>
+        <ambient>1.0 1.0 1.0 1.0</ambient>
+        <diffuse>1.0 1.0 1.0 1.0</diffuse>
+        <specular>0.3 0.3 0.3 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 3 - Z --- 3S-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-40">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M2.5 x 20 - Z --- 20S-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="part2 t307-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part3 t307-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 10 - Z --- 10S-5">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 10 - Z --- 10S-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 25 - Z --- 25S-10">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part9 t308-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 3 - Z --- 3S-4">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Hexagon Thin Nut ISO - 4035 - M3 - N-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Spring Pin ISO 8752 - 5 x 14 - St-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part10 t308-1">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Hexagon Thin Nut ISO - 4035 - M4 - N-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 12 - Z --- 12S-5">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="part1 t307-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part3 t307-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 10 - Z --- 10S-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M3 x 10 - Z --- 10S-4">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part10 t308-2">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Hexagon Thin Nut ISO - 4035 - M4 - N-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Spring Pin ISO 13337 - 4 x 8 - St-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M2.5 x 20 - Z --- 20S-1">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Spring Pin ISO 13337 - 4 x 8 - St-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part5 t308-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Hexagon Thin Nut ISO - 4035 - M2.5 - N-4">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Hexagon Thin Nut ISO - 4035 - M2.5 - N-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part4 middle cover-13">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part3 bottom cover-13">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-7">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M1.6 x 8 - Z --- 8S-6">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Hexagon Thin Nut ISO - 4035 - M4 - N-4">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part4-m-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part3-m-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 10 - Z --- 10S-2">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part5 upper cover-1">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part4 middle cover-1">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part3 bottom cover-1">
+    <visual>
+      <material>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 1.0 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Spring Pin ISO 13337 - 6 x 65 - St-4">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 10 - Z --- 10S-3">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 30 - Z --- 30N-8">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="ISO 7045 - M4 x 30 - Z --- 30N-9">
+    <visual>
+      <material>
+        <ambient>0.776471 0.756863 0.737255 1.0</ambient>
+        <diffuse>0.776471 0.756863 0.737255 1.0</diffuse>
+        <specular>0.3882355 0.3784315 0.3686275 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="Part2-m1-2">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="part5-m1-1">
+    <visual>
+      <material>
+        <ambient>0.780392 0.760784 0.741176 1.0</ambient>
+        <diffuse>0.780392 0.760784 0.741176 1.0</diffuse>
+        <specular>0.6243136 0.6086272 0.5929407999999999 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo>
+    <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+  </gazebo>
+</robot>

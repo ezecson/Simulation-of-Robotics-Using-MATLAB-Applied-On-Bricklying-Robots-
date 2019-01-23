@@ -1,0 +1,73 @@
+<robot name="testmodel">
+  <link name="floor-1">
+    <inertial>
+      <origin xyz="0.385098 0.547913 0.745317" rpy="0 0 0"/>
+      <mass value="2.43515"/>
+      <inertia ixx="0.128229" ixy="0.000174623" ixz="1.19317e-05" iyy="0.20024" iyz="-1.11316e-05" izz="0.328462"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.385863 0.5472 0.743723" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="testmodel - floor-1.stl"/>
+      </geometry>
+      <material name="floor-1_color">
+        <color rgba="0.792157 0.819608 0.933333 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.385863 0.5472 0.743723" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="testmodel - floor-1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="part5-m1-2">
+    <inertial>
+      <origin xyz="-0.00021100000000007224 0 0" rpy="0 0 0"/>
+      <mass value="0.00210687"/>
+      <inertia ixx="2.46265e-07" ixy="0.0" ixz="0.0" iyy="1.76711e-07" iyz="0.0" izz="1.76711e-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="testmodel - model-2 part5-m1-2.stl"/>
+      </geometry>
+      <material name="part5-m1-2_color">
+        <color rgba="0.780392 0.760784 0.741176 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="testmodel - model-2 part5-m1-2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="floor-1--part5-m1-2" type="fixed">
+    <origin xyz="0.310483 0.643043 0.756723" rpy="-0.09645248443835504 -1.5707963267948966 0"/>
+    <parent link="floor-1"/>
+    <child link="part5-m1-2"/>
+    <dynamics damping="0.1"/>
+  </joint>
+  <gazebo reference="floor-1">
+    <visual>
+      <material>
+        <ambient>0.792157 0.819608 0.933333 1.0</ambient>
+        <diffuse>0.792157 0.819608 0.933333 1.0</diffuse>
+        <specular>0.3960785 0.409804 0.4666665 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo reference="part5-m1-2">
+    <visual>
+      <material>
+        <ambient>0.780392 0.760784 0.741176 1.0</ambient>
+        <diffuse>0.780392 0.760784 0.741176 1.0</diffuse>
+        <specular>0.6243136 0.6086272 0.5929407999999999 1.0</specular>
+      </material>
+    </visual>
+  </gazebo>
+  <gazebo>
+    <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+  </gazebo>
+</robot>

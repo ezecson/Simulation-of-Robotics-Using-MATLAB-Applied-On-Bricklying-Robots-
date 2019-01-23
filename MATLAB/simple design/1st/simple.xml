@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<PhysicalModelingXMLFile>
+
+  <formatVersion>"1.0.4"</formatVersion>
+
+  <internalVersion>1</internalVersion>
+
+  <createdUsing>"Simscape Multibody Link Version 5.0"</createdUsing>
+
+  <createdFrom>"SolidWorks 22.4.0"</createdFrom>
+
+  <createdOn>"08/17/18||16:43:21"</createdOn>
+
+  <createdBy>"No formal user defined!"</createdBy>
+
+  <name>"simple"</name>
+
+  <SimscapeMultibody>
+    <name>"simple"</name>
+    <nodeID>"simple"</nodeID>
+    <bodies>
+      <Body>
+        <name>"Part4-2"</name>
+        <nodeID>"Part4-2"</nodeID>
+        <status>""</status>
+        <mass>0.00204302</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>8.60805e-009,0,0,0,2.22351e-006,0,0,0,2.22905e-006</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>2.04302e-006</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0.0022251</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part4-2::CG(AUTOGEN)"</nodeID>
+            <position>-0.0944185,-0.0103126,0.0642613</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.376376,0.152888,0.913765,0.846584,0.343892,-0.406243,-0.376346,0.926479,0</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part4-2::CS1(AUTOGEN)"</nodeID>
+            <position>-0.0731533,-0.00329349,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.376376,0.152888,0.913765,0.846584,0.343892,-0.406243,-0.376346,0.926479,0</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="8">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part4-1:-:Part4-2::Part4-2(AUTOGEN)"</nodeID>
+            <position>-0.0731533,-0.00329349,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="19">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"ISO 7045 - M5 x 8 - Z --- 8S-3:-:Part4-2::Part4-2(AUTOGEN)"</nodeID>
+            <position>-0.0742824,-0.00051405,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"simple - Part4-2.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.5</specular>
+          <shininess>0.4</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"Hexagon Nut ISO - 4032 - M5 - W - N-2"</name>
+        <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-2"</nodeID>
+        <status>""</status>
+        <mass>0.00019053</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>1.39043e-009,-7.15756e-017,0,-7.15756e-017,1.39043e-009,-3.52631e-016,0,-3.52631e-016,2.10777e-009</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>1.9053e-007</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0.000266745</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-2::CG(AUTOGEN)"</nodeID>
+            <position>-0.071131,-0.00827195,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.914458,0.371463,-0.160566,0.148761,0.0604284,0.987025,0.376346,-0.926479,0</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-2::CS1(AUTOGEN)"</nodeID>
+            <position>-0.0702555,-0.0104274,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.914458,0.371463,-0.160566,0.148761,0.0604284,0.987025,0.376346,-0.926479,0</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="4">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-2:-:Part4-1::Hexagon Nut ISO - 4032 - M5 - W - N-2(AUTOGEN)"</nodeID>
+            <position>0.0162347,0.0297788,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="12">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-2:-:ISO 7045 - M5 x 8 - Z --- 8S-3::Hexagon Nut ISO - 4032 - M5 - W - N-2(AUTOGEN)"</nodeID>
+            <position>-0.085234,0.0264465,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"simple - Hexagon Nut ISO - 4032 - M5 - W - N-2.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.776471,0.756863,0.737255</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.5</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"Hexagon Nut ISO - 4032 - M5 - W - N-1"</name>
+        <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-1"</nodeID>
+        <status>""</status>
+        <mass>0.00019053</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>1.39043e-009,-7.15756e-017,0,-7.15756e-017,1.39043e-009,-3.52631e-016,0,-3.52631e-016,2.10777e-009</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>1.9053e-007</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0.000266745</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-1::CG(AUTOGEN)"</nodeID>
+            <position>0.0178807,0.0257269,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.714614,0.290284,0.636445,-0.589653,-0.239523,0.771322,0.376346,-0.926479,0</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-1::CS1(AUTOGEN)"</nodeID>
+            <position>0.0187562,0.0235714,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.714614,0.290284,0.636445,-0.589653,-0.239523,0.771322,0.376346,-0.926479,0</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="14">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-1:-:Part2-1::Hexagon Nut ISO - 4032 - M5 - W - N-1(AUTOGEN)"</nodeID>
+            <position>0.0169874,0.0279259,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="18">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-1:-:ISO 7045 - M5 x 6 - Z --- 6S-2::Hexagon Nut ISO - 4032 - M5 - W - N-1(AUTOGEN)"</nodeID>
+            <position>0.00415401,0.0595188,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"simple - Hexagon Nut ISO - 4032 - M5 - W - N-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.776471,0.756863,0.737255</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.5</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"Part4-1"</name>
+        <nodeID>"Part4-1"</nodeID>
+        <status>""</status>
+        <mass>0.00204302</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>8.60805e-009,0,0,0,2.22351e-006,0,0,0,2.22905e-006</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>2.04302e-006</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0.0022251</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part4-1::CG(AUTOGEN)"</nodeID>
+            <position>-0.0284593,0.0132427,0.0870184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.802355,0.325925,-0.5,-0.46324,-0.188173,-0.866025,-0.376346,0.926479,0</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part4-1::CS1(AUTOGEN)"</nodeID>
+            <position>0.0162347,0.0297788,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.802355,0.325925,-0.5,-0.46324,-0.188173,-0.866025,-0.376346,0.926479,0</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="3">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-2:-:Part4-1::Part4-1(AUTOGEN)"</nodeID>
+            <position>0.0162347,0.0297788,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="6">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part2-1:-:Part4-1::Part4-1(AUTOGEN)"</nodeID>
+            <position>0.0162347,0.0297788,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="7">
+            <name>"CS4"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part4-1:-:Part4-2::Part4-1(AUTOGEN)"</nodeID>
+            <position>-0.0731533,-0.00329349,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="9">
+            <name>"CS5"</name>
+            <displayName>""</displayName>
+            <nodeID>"ISO 7045 - M5 x 6 - Z --- 6S-2:-:Part4-1::Part4-1(AUTOGEN)"</nodeID>
+            <position>0.0151057,0.0325583,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"simple - Part4-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.5</specular>
+          <shininess>0.4</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"ISO 7045 - M5 x 6 - Z --- 6S-2"</name>
+        <nodeID>"ISO 7045 - M5 x 6 - Z --- 6S-2"</nodeID>
+        <status>""</status>
+        <mass>0.000297704</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>2.41963e-009,7.00947e-020,-5.87906e-020,7.00947e-020,2.96347e-009,0,-5.87906e-020,0,2.96347e-009</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>2.97704e-007</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0.000363327</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"ISO 7045 - M5 x 6 - Z --- 6S-2::CG(AUTOGEN)"</nodeID>
+            <position>0.0151424,0.0324679,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.376346,-0.926479,0,0.926479,0.376346,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"ISO 7045 - M5 x 6 - Z --- 6S-2::CS1(AUTOGEN)"</nodeID>
+            <position>0.0137132,0.0359862,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.376346,-0.926479,0,0.926479,0.376346,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="10">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"ISO 7045 - M5 x 6 - Z --- 6S-2:-:Part4-1::ISO 7045 - M5 x 6 - Z --- 6S-2(AUTOGEN)"</nodeID>
+            <position>0.0151057,0.0325583,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="17">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-1:-:ISO 7045 - M5 x 6 - Z --- 6S-2::ISO 7045 - M5 x 6 - Z --- 6S-2(AUTOGEN)"</nodeID>
+            <position>0.00415401,0.0595188,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"simple - ISO 7045 - M5 x 6 - Z --- 6S-2.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.776471,0.756863,0.737255</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.5</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"ISO 7045 - M5 x 8 - Z --- 8S-3"</name>
+        <nodeID>"ISO 7045 - M5 x 8 - Z --- 8S-3"</nodeID>
+        <status>""</status>
+        <mass>0.000332876</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>2.51955e-009,6.3864e-020,-6.50208e-020,6.3864e-020,4.49484e-009,0,-6.50208e-020,0,4.49484e-009</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>3.32876e-007</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0.000406261</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"ISO 7045 - M5 x 8 - Z --- 8S-3::CG(AUTOGEN)"</nodeID>
+            <position>-0.0739749,-0.00127104,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.376346,-0.926479,0,0.926479,0.376346,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"ISO 7045 - M5 x 8 - Z --- 8S-3::CS1(AUTOGEN)"</nodeID>
+            <position>-0.0756748,0.00291392,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>0.376346,-0.926479,0,0.926479,0.376346,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="11">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-2:-:ISO 7045 - M5 x 8 - Z --- 8S-3::ISO 7045 - M5 x 8 - Z --- 8S-3(AUTOGEN)"</nodeID>
+            <position>-0.085234,0.0264465,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="20">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"ISO 7045 - M5 x 8 - Z --- 8S-3:-:Part4-2::ISO 7045 - M5 x 8 - Z --- 8S-3(AUTOGEN)"</nodeID>
+            <position>-0.0742824,-0.00051405,0.114518</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"simple - ISO 7045 - M5 x 8 - Z --- 8S-3.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.776471,0.756863,0.737255</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.5</specular>
+          <shininess>0.3125</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"part1-1"</name>
+        <nodeID>"part1-1"</nodeID>
+        <status>""</status>
+        <mass>0.0215356</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>3.39052e-006,0,0,0,3.39052e-006,0,0,0,6.25091e-006</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>2.15356e-005</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0.00584336</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"part1-1::CG(AUTOGEN)"</nodeID>
+            <position>0.0169874,0.0279259,0.0436803</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"part1-1::CS1(AUTOGEN)"</nodeID>
+            <position>0.0169874,0.0279259,0.0380184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="2">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"part1-1:-:simple/RootPart::part1-1(AUTOGEN)"</nodeID>
+            <position>0.0169874,0.0279259,0.0436803</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="15">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part2-1:-:part1-1::part1-1(AUTOGEN)"</nodeID>
+            <position>0.0169874,0.0279259,0.0530184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"simple - part1-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.5</specular>
+          <shininess>0.4</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"RootPart"</name>
+        <nodeID>"simple/RootPart"</nodeID>
+        <status>""</status>
+        <mass>0</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"simple/RootPart::CG(AUTOGEN)"</nodeID>
+            <position>0.00371042,0.0234607,0.0504037</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"simple/RootPart::CS1(AUTOGEN)"</nodeID>
+            <position>0,0,0</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="1">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"part1-1:-:simple/RootPart::simple/RootPart(AUTOGEN)"</nodeID>
+            <position>0.0169874,0.0279259,0.0436803</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="22">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"RootGround:-:simple/RootPart::simple/RootPart(AUTOGEN)"</nodeID>
+            <position>0.00371042,0.0234607,0.0504037</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>""</geometryFileName>
+      </Body>
+      <Body>
+        <name>"Part2-1"</name>
+        <nodeID>"Part2-1"</nodeID>
+        <status>""</status>
+        <mass>0.00107835</mass>
+        <massUnits>"kg"</massUnits>
+        <inertia>4.41673e-008,0,0,0,4.45945e-008,4.03831e-010,0,4.03831e-010,7.79296e-008</inertia>
+        <inertiaUnits>"kg*m^2"</inertiaUnits>
+        <volume>1.07835e-006</volume>
+        <volumeUnits>"m^3"</volumeUnits>
+        <surfaceArea>0.00184726</surfaceArea>
+        <surfaceAreaUnits>"m^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part2-1::CG(AUTOGEN)"</nodeID>
+            <position>0.0169627,0.0279866,0.0538054</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.926479,-0.376346,0,-0.376346,0.926479,0,0,0,-1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part2-1::CS1(AUTOGEN)"</nodeID>
+            <position>0.0169874,0.0279259,0.0550184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>-0.926479,-0.376346,0,-0.376346,0.926479,0,0,0,-1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="5">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part2-1:-:Part4-1::Part2-1(AUTOGEN)"</nodeID>
+            <position>0.0162347,0.0297788,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="13">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-1:-:Part2-1::Part2-1(AUTOGEN)"</nodeID>
+            <position>0.0169874,0.0279259,0.0595184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="16">
+            <name>"CS4"</name>
+            <displayName>""</displayName>
+            <nodeID>"Part2-1:-:part1-1::Part2-1(AUTOGEN)"</nodeID>
+            <position>0.0169874,0.0279259,0.0530184</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"simple - Part2-1.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.792157,0.819608,0.933333</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>0.5</specular>
+          <shininess>0.4</shininess>
+          <transparency>0</transparency>
+          <emission>0</emission>
+        </MaterialProp>
+      </Body>
+    </bodies>
+    <joints>
+      <SimpleJoint>
+        <name>"RootPart--part1-1"</name>
+        <nodeID>"part1-1:-:simple/RootPart"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="1"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="2"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"weld"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.57735,0.57735,0.57735</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"Part4-1--Hexagon Nut ISO - 4032 - M5 - W - N-2"</name>
+        <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-2:-:Part4-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="3"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="4"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"prismatic"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.679627,0.276072,0.679627</axis>
+          </Primitive>
+          <Primitive>
+            <name>"prismatic"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.62966,0.255775,-0.733558</axis>
+          </Primitive>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.376346,-0.926479,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"Part2-1--Part4-1"</name>
+        <nodeID>"Part2-1:-:Part4-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="5"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="6"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"weld"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.57735,0.57735,0.57735</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"Part4-1--Part4-2"</name>
+        <nodeID>"Part4-1:-:Part4-2"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="7"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="8"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.376346,-0.926479,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"Part4-1--ISO 7045 - M5 x 6 - Z --- 6S-2"</name>
+        <nodeID>"ISO 7045 - M5 x 6 - Z --- 6S-2:-:Part4-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="9"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="10"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.376346,-0.926479,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"ISO 7045 - M5 x 8 - Z --- 8S-3--Hexagon Nut ISO - 4032 - M5 - W - N-2"</name>
+        <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-2:-:ISO 7045 - M5 x 8 - Z --- 8S-3"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="11"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="12"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"prismatic"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.376346,-0.926479,0</axis>
+          </Primitive>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>-0.376346,0.926479,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"Part2-1--Hexagon Nut ISO - 4032 - M5 - W - N-1"</name>
+        <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-1:-:Part2-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="13"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="14"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"prismatic"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.679627,0.276072,0.679627</axis>
+          </Primitive>
+          <Primitive>
+            <name>"prismatic"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>-0.62966,-0.255775,0.733558</axis>
+          </Primitive>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.376346,-0.926479,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"part1-1--Part2-1"</name>
+        <nodeID>"Part2-1:-:part1-1"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="15"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="16"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0,0,-1</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"ISO 7045 - M5 x 6 - Z --- 6S-2--Hexagon Nut ISO - 4032 - M5 - W - N-1"</name>
+        <nodeID>"Hexagon Nut ISO - 4032 - M5 - W - N-1:-:ISO 7045 - M5 x 6 - Z --- 6S-2"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="17"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="18"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"prismatic"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.376346,-0.926479,0</axis>
+          </Primitive>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>-0.376346,0.926479,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"Part4-2--ISO 7045 - M5 x 8 - Z --- 8S-3"</name>
+        <nodeID>"ISO 7045 - M5 x 8 - Z --- 8S-3:-:Part4-2"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="19"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="20"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"revolute"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.376346,-0.926479,0</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"RootGround--RootPart"</name>
+        <nodeID>"RootGround:-:simple/RootPart"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="21"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="22"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"weld"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.57735,0.57735,0.57735</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+    </joints>
+    <grounds>
+      <Ground>
+        <name>"RootGround"</name>
+        <nodeID>"RootGround"</nodeID>
+        <status>""</status>
+        <frame>
+          <Frame ref="21">
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"RootGround:-:simple/RootPart::RootGround(AUTOGEN)"</nodeID>
+            <position>0.00371042,0.0234607,0.0504037</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"m"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frame>
+      </Ground>
+    </grounds>
+    <subsystems></subsystems>
+    <connectionPorts></connectionPorts>
+    <id>0</id>
+  </SimscapeMultibody>
+
+</PhysicalModelingXMLFile>

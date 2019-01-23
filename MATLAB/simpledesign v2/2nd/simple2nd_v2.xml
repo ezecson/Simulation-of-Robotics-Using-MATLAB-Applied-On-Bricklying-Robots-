@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="08/19/18||20:22:36" using="Simscape Multibody Link Version 5.0" from="SolidWorks 22.4.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="simple" uid="simple" version="165">
+<AssemblyFile name="simple.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="ISO 7045 - M5 x 6 - Z --- 6S-2" uid="ISO 7045 - M5 x 6 - Z --- 6S-2" entityUid="ISO 7045 - M5 x 6 - Z --- 6S*:*ISO 7045 - M5 x 6 - Z --- 6S">
+<Transform>
+<Rotation>0.37634591921688948 0.92647922215708356 0 -0.92647922215708356 0.37634591921688948 0 0 0 0.99999999999999989</Rotation>
+<Translation>0.013713195652577809 0.03598624949769761 0.059518402914077576</Translation>
+</Transform>
+</Instance>
+<Instance name="Hexagon Nut ISO - 4032 - M5 - W - N-1" uid="Hexagon Nut ISO - 4032 - M5 - W - N-1" entityUid="Hexagon Nut ISO - 4032 - M5 - W - N*:*Hexagon Nut ISO - 4032 - M5 - W - N">
+<Transform>
+<Rotation>0.71461413071890612 -0.58965277347406475 0.37634591921688948 0.29028401876581572 -0.23952335869466485 -0.92647922215708345 0.63644468151287881 0.77132234984730619 0</Rotation>
+<Translation>0.018756230970084171 0.023571427920792639 0.059518402914077576</Translation>
+</Transform>
+</Instance>
+<Instance name="Part4-1" uid="Part4-1" entityUid="Part4*:*Default">
+<Transform>
+<Rotation>0.80235454246648241 -0.46323961107853967 -0.37634591921688898 0.32592512665243251 -0.18817295960844363 0.92647922215708389 -0.49999999999999761 -0.86602540378444004 0</Rotation>
+<Translation>0.016234713311330772 0.029778838709245092 0.059518402914077673</Translation>
+</Transform>
+</Instance>
+<Instance name="ISO 7045 - M5 x 8 - Z --- 8S-3" uid="ISO 7045 - M5 x 8 - Z --- 8S-3" entityUid="ISO 7045 - M5 x 8 - Z --- 8S*:*ISO 7045 - M5 x 8 - Z --- 8S">
+<Transform>
+<Rotation>0.3763459192168892 0.92647922215708356 0 -0.92647922215708356 0.3763459192168892 0 0 0 1</Rotation>
+<Translation>-0.075674841776385712 0.0029139232324014042 0.11451840291407768</Translation>
+</Transform>
+</Instance>
+<Instance name="Hexagon Nut ISO - 4032 - M5 - W - N-2" uid="Hexagon Nut ISO - 4032 - M5 - W - N-2" entityUid="Hexagon Nut ISO - 4032 - M5 - W - N*:*Hexagon Nut ISO - 4032 - M5 - W - N">
+<Transform>
+<Rotation>0.91445824140761123 0.14876113003904462 0.37634591921688959 0.37146286631958286 0.060428386184353262 -0.92647922215708367 -0.16056607259112643 0.98702509407444194 0</Rotation>
+<Translation>-0.070255460539662473 -0.010427377566660663 0.11451840291407768</Translation>
+</Transform>
+</Instance>
+<Instance name="part1-1" uid="part1-1" grounded="true" entityUid="part1*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.016987405149764774 0.027925880264930949 0.038018402914077577</Translation>
+</Transform>
+</Instance>
+<Instance name="Part2-1" uid="Part2-1" entityUid="Part2*:*Default">
+<Transform>
+<Rotation>-0.92647922215708367 -0.37634591921688915 0 -0.37634591921688915 0.92647922215708367 0 0 0 -1</Rotation>
+<Translation>0.016987405149764781 0.027925880264930952 0.055018402914077578</Translation>
+</Transform>
+</Instance>
+<Instance name="Part4-2" uid="Part4-2" entityUid="Part4*:*Default">
+<Transform>
+<Rotation>0.32529975812119788 0.8674928336620914 -0.3763459192168887 0.13214029366585886 0.35238500777006049 0.92647922215708367 0.93633274542557277 -0.35111392715728224 3.0932277632498267e-016</Rotation>
+<Translation>-0.073153324117632576 -0.0032934875560510632 0.11451840291407767</Translation>
+</Transform>
+</Instance>
+<Instance name="ISO 7045 - M5 x 6 - Z --- 6S-3" uid="ISO 7045 - M5 x 6 - Z --- 6S-3" entityUid="ISO 7045 - M5 x 6 - Z --- 6S*:*ISO 7045 - M5 x 6 - Z --- 6S">
+<Transform>
+<Rotation>-0.37634591921688881 -0.92647922215708389 -3.2148523226868704e-016 0.92647922215708389 -0.37634591921688881 -4.6445988348871741e-016 3.0932277632498272e-016 -4.7264696971821302e-016 1</Rotation>
+<Translation>-0.10754381760986187 -0.021256892981276743 0.011521800917264666</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>part1-1</Uid>
+</InstancePath>
+<Position>0 0 0.014999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part2-1</Uid>
+</InstancePath>
+<Position>0 0 0.0069999999999999993</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>part1-1</Uid>
+</InstancePath>
+<Position>0 0 0.010000000000000002</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part2-1</Uid>
+</InstancePath>
+<Position>0 0 0.0069999999999999993</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part2-1</Uid>
+</InstancePath>
+<Position>0 0.0020000000000000018 -0.0044999999999999971</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part4-1</Uid>
+</InstancePath>
+<Position>0 0 0.0030000000000000027</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part2-1</Uid>
+</InstancePath>
+<Position>0 0.0020000000000000018 -0.0044999999999999971</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part4-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part4-1</Uid>
+</InstancePath>
+<Position>-0.11000000000000003 0 0.0029999999999999923</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part4-2</Uid>
+</InstancePath>
+<Position>0 0 0.0030000000000000027</Position>
+<Axis>0 1.6411868598591612e-016 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part4-1</Uid>
+</InstancePath>
+<Position>0 0 0.0030000000000000027</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part4-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1.6411868598591612e-016 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Angle name="Angle1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part4-1</Uid>
+</InstancePath>
+<Position>-0.0033541019662496861 -0.0030000000000000027 0.0030000000000000027</Position>
+<Axis>2.2204460492503131e-016 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Angle>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part4-1</Uid>
+</InstancePath>
+<Position>0 0 0.0030000000000000027</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>ISO 7045 - M5 x 6 - Z --- 6S-2</Uid>
+</InstancePath>
+<Position>-0.025399999999999968 0 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part4-1</Uid>
+</InstancePath>
+<Position>0 0 0.0030000000000000027</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>ISO 7045 - M5 x 6 - Z --- 6S-2</Uid>
+</InstancePath>
+<Position>0.0037000000000000054 0.0024999999999999988 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric51">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part4-2</Uid>
+</InstancePath>
+<Position>0 0 0.0030000000000000027</Position>
+<Axis>0 1.6411868598591612e-016 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>ISO 7045 - M5 x 8 - Z --- 8S-3</Uid>
+</InstancePath>
+<Position>-0.025399999999999964 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident51">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part4-2</Uid>
+</InstancePath>
+<Position>0 0 0.0030000000000000027</Position>
+<Axis>0 -1.6411868598591612e-016 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>ISO 7045 - M5 x 8 - Z --- 8S-3</Uid>
+</InstancePath>
+<Position>0.0036999999999999984 0.0025000000000000022 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>ISO 7045 - M5 x 6 - Z --- 6S-2</Uid>
+</InstancePath>
+<Position>-0.025399999999999968 0 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Hexagon Nut ISO - 4032 - M5 - W - N-1</Uid>
+</InstancePath>
+<Position>0 0 -0.025037505729093176</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric81">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>ISO 7045 - M5 x 8 - Z --- 8S-3</Uid>
+</InstancePath>
+<Position>-0.025399999999999964 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Hexagon Nut ISO - 4032 - M5 - W - N-2</Uid>
+</InstancePath>
+<Position>0 0 -0.025037505729093183</Position>
+<Axis>-1.032232458665774e-016 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part2-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0044999999999999971</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Hexagon Nut ISO - 4032 - M5 - W - N-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0047000000000000045</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part4-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Hexagon Nut ISO - 4032 - M5 - W - N-2</Uid>
+</InstancePath>
+<Position>0 0.0046188021535170237 -0.0047000000000000028</Position>
+<Axis>1.032232458665774e-016 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric83">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part4-2</Uid>
+</InstancePath>
+<Position>-0.10999999999999999 0 0.0029999999999999957</Position>
+<Axis>0 1.6411868598591612e-016 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>ISO 7045 - M5 x 6 - Z --- 6S-3</Uid>
+</InstancePath>
+<Position>-0.025399999999999968 0 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident52">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part4-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1.6411868598591612e-016 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>ISO 7045 - M5 x 6 - Z --- 6S-3</Uid>
+</InstancePath>
+<Position>0.0036999999999999984 0.0024999999999999883 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Hexagon Nut ISO - 4032 - M5 - W - N" uid="Hexagon Nut ISO - 4032 - M5 - W - N*:*Hexagon Nut ISO - 4032 - M5 - W - N" version="111">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Hexagon Nut ISO - 4032 - M5 - W - N.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0001905298288656669</Mass>
+<CenterOfMass>0 7.208802479715305e-010 -0.0023264730204127768</CenterOfMass>
+<Inertia>1.3904325111675991e-009 1.390429393122775e-009 2.1077719100308341e-009 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Hexagon Nut ISO - 4032 - M5 - W - N_Hexagon Nut ISO - 4032 - M5 - W - N_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Diffuse r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Specular r="0.38823529411764707" g="0.3784313725490196" b="0.36862745098039218" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="ISO 7045 - M5 x 6 - Z --- 6S" uid="ISO 7045 - M5 x 6 - Z --- 6S*:*ISO 7045 - M5 x 6 - Z --- 6S" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="ISO 7045 - M5 x 6 - Z --- 6S.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00029770391610972087</Mass>
+<CenterOfMass>0.0037975874414313028 -4.0287395683577402e-014 -4.0285861757498161e-014</CenterOfMass>
+<Inertia>2.4196280913095669e-009 2.9634711703378147e-009 2.9634711703378147e-009 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="ISO 7045 - M5 x 6 - Z --- 6S_ISO 7045 - M5 x 6 - Z --- 6S_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Diffuse r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Specular r="0.38823529411764707" g="0.3784313725490196" b="0.36862745098039218" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="ISO 7045 - M5 x 8 - Z --- 8S" uid="ISO 7045 - M5 x 8 - Z --- 8S*:*ISO 7045 - M5 x 8 - Z --- 8S" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="ISO 7045 - M5 x 8 - Z --- 8S.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00033287618866075164</Mass>
+<CenterOfMass>0.0045170606578909213 -3.6030751791817464e-014 -3.6029140381358342e-014</CenterOfMass>
+<Inertia>2.5195511948421964e-009 4.4948350635400328e-009 4.4948350635400328e-009 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="ISO 7045 - M5 x 8 - Z --- 8S_ISO 7045 - M5 x 8 - Z --- 8S_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Diffuse r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Specular r="0.38823529411764707" g="0.3784313725490196" b="0.36862745098039218" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part2" uid="Part2*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0010783516783446968</Mass>
+<CenterOfMass>0 6.5549890750182021e-005 0.0012130371449380925</CenterOfMass>
+<Inertia>4.4167271228841639e-008 4.4594547064262412e-008 7.7929640907022853e-008 4.0383079929501985e-010 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Part2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part4" uid="Part4*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part4.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0020430217584932412</Mass>
+<CenterOfMass>-0.055000000000000028 0 0.0015000000000000002</CenterOfMass>
+<Inertia>8.6080461795886995e-009 2.2235110618561997e-006 2.2290545753980484e-006 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Part4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="part1" uid="part1*:*Default" version="110">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="part1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.021535617640358034</Mass>
+<CenterOfMass>0 0 0.0056619256017505469</CenterOfMass>
+<Inertia>3.3905175724228416e-006 3.3905175724228412e-006 6.2509132966455853e-006 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="part1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
